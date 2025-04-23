@@ -1,123 +1,105 @@
-/*
- * This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this
- * file, You can obtain one at https://mozilla.org/MPL/2.0/.
- */
-
-#include "statistics_dialog.h"
+    #include "statistics_dialog.h"
 #include "ui_statistics_dialog.h"
 #include <QTableWidgetItem>
-#include "qwt_text.h"
-
+#include <numeric> // for std::accumulate
+#include <qwt_text.h>  // 添加QwtText头文件
 StatisticsDialog::StatisticsDialog(PlotWidget* parent)
-  : QDialog(parent), ui(new Ui::statistics_dialog), _parent(parent)
+    : QDialog(parent), ui(new Ui::statistics_dialog), _parent(parent)
 {
-  ui->setupUi(this);
+    ui->setupUi(this);
 
-  setWindowTitle(QString("Statistics | %1").arg(_parent->windowTitle()));
-  setWindowFlag(Qt::Tool);
+    setWindowTitle(QString("Statistics | %1").arg(_parent->windowTitle()));
+    setWindowFlag(Qt::Tool);
 
-  ui->tableWidget->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+    // 设置表格列数和标题（8列）
+    ui->tableWidget->setColumnCount(8);
+    QStringList headers = { "Curve", "Count", "Min", "Max", "Mean", "Median", "68%", "95%" };
+    ui->tableWidget->setHorizontalHeaderLabels(headers);
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
 
-  connect(ui->rangeComboBox, qOverload<int>(&QComboBox::currentIndexChanged), this,
-          [this]() {
+    connect(ui->rangeComboBox, qOverload<int>(&QComboBox::currentIndexChanged), this,
+        [this]() {
             auto rect = _parent->currentBoundingRect();
             update({ rect.left(), rect.right() });
-          });
+        });
 }
 
 StatisticsDialog::~StatisticsDialog()
 {
-  delete ui;
+    delete ui;
 }
 
 bool StatisticsDialog::calcVisibleRange()
 {
-  return (ui->rangeComboBox->currentIndex() == 0);
+    return (ui->rangeComboBox->currentIndex() == 0);
 }
 
-void StatisticsDialog::update(PJ::Range range)
+void StatisticsDialog::update(Range range)
 {
-  std::map<QString, Statistics> statistics;
+    std::map<QString, Statistics> statistics;
 
-  for (const auto& info : _parent->curveList())
-  {
-    Statistics stat;
-    const auto ts = info.curve->data();
-
-    bool first = true;
-
-    for (size_t i = 0; i < ts->size(); i++)
+    for (const auto& info : _parent->curveList())
     {
-      const auto p = ts->sample(i);
-      if (calcVisibleRange())
-      {
-        if (p.x() < range.min)
+        Statistics stat;
+        const auto ts = info.curve->data();
+        std::vector<double> abs_values; 
+
+        for (size_t i = 0; i < ts->size(); i++)
         {
-          continue;
+            const auto p = ts->sample(i);
+            if (calcVisibleRange())
+            {
+                if (p.x() < range.min) continue;
+                if (p.x() > range.max) break;
+            }
+            stat.count++;
+            stat.y_values.push_back(p.y());
+            abs_values.push_back(std::abs(p.y()));
         }
-        if (p.x() > range.max)
+
+        if (stat.count > 0)
         {
-          break;
+            // 计算基本统计量
+            auto [min_it, max_it] = std::minmax_element(stat.y_values.begin(), stat.y_values.end());
+            stat.min = *min_it;
+            stat.max = *max_it;
+            stat.mean = std::accumulate(stat.y_values.begin(), stat.y_values.end(), 0.0) / stat.count;
+
+            // 排序以计算百分位数
+            std::sort(abs_values.begin(), abs_values.end());
+            stat.median = abs_values[abs_values.size() / 2];  // 50%中位数
+            stat.p68 = abs_values[static_cast<int>(abs_values.size() * 0.68)];  // 68%点
+            stat.p95 = abs_values[static_cast<int>(abs_values.size() * 0.95)];  // 95%点
         }
-      }
-      stat.count++;
-      if (first)
-      {
-        stat.min = p.y();
-        stat.max = p.y();
-        first = false;
-      }
-      else
-      {
-        stat.min = std::min(stat.min, p.y());
-        stat.max = std::max(stat.max, p.y());
-      }
-      stat.mean_tot += p.y();
+
+        statistics[info.curve->title().text()] = stat;
     }
-    statistics[info.curve->title().text()] = stat;
-  }
 
-  ui->tableWidget->setRowCount(statistics.size());
-  int row = 0;
-  for (const auto& it : statistics)
-  {
-    const auto& stat = it.second;
-
-    std::array<QString, 5> row_values;
-    row_values[0] = it.first;
-    row_values[1] = QString::number(stat.count);
-    row_values[2] = QString::number(stat.min, 'f');
-    row_values[3] = QString::number(stat.max, 'f');
-    double mean = stat.mean_tot / double(stat.count);
-    row_values[4] = QString::number(mean, 'f');
-
-    for (size_t col = 0; col < row_values.size(); col++)
+    // 更新表格
+    ui->tableWidget->setRowCount(statistics.size());
+    int row = 0;
+    for (const auto& [name, stat] : statistics)
     {
-      if (auto item = ui->tableWidget->item(row, col))
-      {
-        item->setText(row_values[col]);
-      }
-      else
-      {
-        ui->tableWidget->setItem(row, col, new QTableWidgetItem(row_values[col]));
-      }
+        ui->tableWidget->setItem(row, 0, new QTableWidgetItem(name));
+        ui->tableWidget->setItem(row, 1, new QTableWidgetItem(QString::number(stat.count)));
+        ui->tableWidget->setItem(row, 2, new QTableWidgetItem(QString::number(stat.min, 'f', 3)));
+        ui->tableWidget->setItem(row, 3, new QTableWidgetItem(QString::number(stat.max, 'f', 3)));
+        ui->tableWidget->setItem(row, 4, new QTableWidgetItem(QString::number(stat.mean, 'f', 3)));
+        ui->tableWidget->setItem(row, 5, new QTableWidgetItem(QString::number(stat.median, 'f', 3)));
+        ui->tableWidget->setItem(row, 6, new QTableWidgetItem(QString::number(stat.p68, 'f', 3)));
+        ui->tableWidget->setItem(row, 7, new QTableWidgetItem(QString::number(stat.p95, 'f', 3)));
+        row++;
     }
-    row++;
-  }
 }
 
 void StatisticsDialog::setTitle(QString title)
 {
-  if (title == "...")
-  {
-    title = "";
-  }
-  setWindowTitle(QString("Statistics | %1").arg(title));
+    if (title == "...") title = "";
+    setWindowTitle(QString("Statistics | %1").arg(title));
 }
 
 void StatisticsDialog::closeEvent(QCloseEvent* event)
 {
-  QWidget::closeEvent(event);
-  emit rejected();
+    QWidget::closeEvent(event);
+    emit rejected();
 }
