@@ -176,6 +176,10 @@ void PlotWidget::buildActions()
   connect(_action_removeAllCurves, &QAction::triggered, this,
           &PlotWidget::undoableChange);
 
+  _action_show_points = new QAction("Show All Points", this);
+  _action_show_points->setCheckable(true);
+  connect(_action_show_points, &QAction::toggled, this, &PlotWidget::onShowPointsTriggered);
+
   _action_zoomOutMaximum = new QAction("&Zoom Out", this);
   connect(_action_zoomOutMaximum, &QAction::triggered, this, [this]() {
     zoomOut(true);
@@ -265,6 +269,8 @@ void PlotWidget::canvasContextMenuTriggered(const QPoint& pos)
   menu.addSeparator();
   menu.addAction(_action_removeAllCurves);
   menu.addSeparator();
+  menu.addAction(_action_show_points);
+
   if (isXYPlot())
   {
     menu.addAction(_flip_x);
@@ -292,7 +298,20 @@ void PlotWidget::canvasContextMenuTriggered(const QPoint& pos)
 
   menu.exec(qwtPlot()->canvas()->mapToGlobal(pos));
 }
-
+void PlotWidget::onShowPointsTriggered(bool show)
+{
+    _show_all_points = show;
+    for (auto& it : curveList())
+    {
+        QwtSymbol* symbol = nullptr;
+        if (show)
+        {
+            symbol = new QwtSymbol(QwtSymbol::Rect, QBrush(Qt::black), QPen(Qt::black), QSize(3, 3));
+        }
+        it.curve->setSymbol(symbol);
+    }
+    replot();
+}
 PlotWidget::CurveInfo* PlotWidget::addCurveXY(std::string name_x, std::string name_y,
                                               QString curve_name)
 {

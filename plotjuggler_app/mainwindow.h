@@ -272,7 +272,7 @@ private slots:
   void on_actionLoadStyleSheet_triggered();
   void on_buttonLegend_clicked();
   void on_buttonZoomOut_clicked();
-
+  void on_actionShowPoints_triggered(bool checked);
   void on_buttonStreamingOptions_clicked();
   void on_buttonHideFileFrame_clicked();
   void on_buttonHideStreamingFrame_clicked();
@@ -293,6 +293,7 @@ private slots:
 private:
   QStringList readAllCurvesFromXML(QDomElement root_node);
   void loadAllPlugins(QStringList command_line_plugin_folders);
+  void updatePointsVisibility();
 };
 
 class PopupMenu : public QMenu

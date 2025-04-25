@@ -109,7 +109,7 @@ public slots:
   void onDataSourceRemoved(const std::string& src_name);
 
   void removeAllCurves() override;
-
+  void onShowPointsTriggered(bool show);
   void on_panned(int dx, int dy);
 
   void zoomOut(bool emit_signal);
@@ -159,7 +159,7 @@ private slots:
 private slots:
 
   void canvasContextMenuTriggered(const QPoint& pos);
-
+  
   void on_externallyResized(const QRectF& new_rect);
 
 private:
@@ -169,7 +169,8 @@ private:
   QAction* _action_split_horizontal;
   QAction* _action_split_vertical;
   QAction* _action_data_statistics;
-
+  bool _show_all_points = false;
+  QAction* _action_show_points;
   QAction* _action_zoomOutMaximum;
   QAction* _action_zoomOutHorizontally;
   QAction* _action_zoomOutVertically;

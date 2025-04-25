@@ -508,7 +508,7 @@ void MainWindow::initializeActions()
           &QPushButton::toggle);
   connect(&_fullscreen_shortcut, &QShortcut::activated, this,
           &MainWindow::onActionFullscreenTriggered);
-
+  connect(ui->actionShowPoints, &QAction::toggled, this, &MainWindow::on_actionShowPoints_triggered);
   QShortcut* open_menu_shortcut = new QShortcut(QKeySequence(Qt::ALT + Qt::Key_F), this);
   connect(open_menu_shortcut, &QShortcut::activated,
           [this]() { ui->menuFile->exec(ui->menuBar->mapToGlobal(QPoint(0, 25))); });
@@ -909,6 +909,18 @@ void MainWindow::buildDummyData()
   PlotDataMapRef datamap;
   BuildDummyData(datamap);
   importPlotDataMap(datamap, true);
+}
+
+void MainWindow::on_actionShowPoints_triggered(bool checked)
+{
+    updatePointsVisibility();
+}
+
+void MainWindow::updatePointsVisibility()
+{
+    forEachWidget([this](PlotWidget* plot) {
+        plot->onShowPointsTriggered(ui->actionShowPoints->isChecked());
+        });
 }
 
 void MainWindow::on_splitterMoved(int, int)

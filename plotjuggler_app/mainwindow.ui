@@ -2013,6 +2013,18 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
+<action name="actionShowPoints">
+  <property name="icon">
+    <iconset resource="../../resources/resources.qrc">
+      <normaloff>:/resources/svg/points.svg</normaloff>:/resources/svg/points.svg</iconset>
+  </property>
+  <property name="text">
+    <string>Show Points</string>
+  </property>
+  <property name="checkable">
+    <bool>true</bool>
+  </property>
+</action>
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
