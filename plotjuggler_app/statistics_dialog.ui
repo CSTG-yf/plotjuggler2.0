@@ -50,6 +50,11 @@
        <string>Mean</string>
       </property>
      </column>
+	<column>
+      <property name="text">
+       <string>Std Dev</string>
+      </property>
+     </column>
      <column>
       <property name="text">
        <string>Median</string>

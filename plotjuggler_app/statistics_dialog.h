@@ -25,6 +25,7 @@ struct Statistics
     double min = 0;         // 最小值
     double max = 0;         // 最大值
     double mean = 0;        // 平均值
+    double std_dev = 0; ;   //标准差
     double median = 0;      // 中位数（50%）
     double p68 = 0;         // 第68%个点
     double p95 = 0;         // 第95%个点

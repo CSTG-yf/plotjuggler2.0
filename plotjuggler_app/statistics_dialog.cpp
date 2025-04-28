@@ -3,6 +3,7 @@
 #include <QTableWidgetItem>
 #include <numeric> // for std::accumulate
 #include <qwt_text.h>  // 添加QwtText头文件
+#include<cmath>
 StatisticsDialog::StatisticsDialog(PlotWidget* parent)
     : QDialog(parent), ui(new Ui::statistics_dialog), _parent(parent)
 {
@@ -11,9 +12,9 @@ StatisticsDialog::StatisticsDialog(PlotWidget* parent)
     setWindowTitle(QString("Statistics | %1").arg(_parent->windowTitle()));
     setWindowFlag(Qt::Tool);
 
-    // 设置表格列数和标题（8列）
-    ui->tableWidget->setColumnCount(8);
-    QStringList headers = { "Curve", "Count", "Min", "Max", "Mean", "Median", "68%", "95%" };
+    // 设置表格列数和标题（9列）
+    ui->tableWidget->setColumnCount(9);
+    QStringList headers = { "Curve", "Count", "Min", "Max", "Mean", "Median","Std Dev", "68%", "95%"};
     ui->tableWidget->setHorizontalHeaderLabels(headers);
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
 
@@ -64,7 +65,11 @@ void StatisticsDialog::update(Range range)
             stat.min = *min_it;
             stat.max = *max_it;
             stat.mean = std::accumulate(stat.y_values.begin(), stat.y_values.end(), 0.0) / stat.count;
-
+            double sum_sq = 0.0;
+            for (double y : stat.y_values) {
+                sum_sq += (y - stat.mean) * (y - stat.mean);
+            }
+            stat.std_dev = std::sqrt(sum_sq / stat.count);
             // 排序以计算百分位数
             std::sort(abs_values.begin(), abs_values.end());
             stat.median = abs_values[abs_values.size() / 2];  // 50%中位数
@@ -85,9 +90,10 @@ void StatisticsDialog::update(Range range)
         ui->tableWidget->setItem(row, 2, new QTableWidgetItem(QString::number(stat.min, 'f', 3)));
         ui->tableWidget->setItem(row, 3, new QTableWidgetItem(QString::number(stat.max, 'f', 3)));
         ui->tableWidget->setItem(row, 4, new QTableWidgetItem(QString::number(stat.mean, 'f', 3)));
-        ui->tableWidget->setItem(row, 5, new QTableWidgetItem(QString::number(stat.median, 'f', 3)));
-        ui->tableWidget->setItem(row, 6, new QTableWidgetItem(QString::number(stat.p68, 'f', 3)));
-        ui->tableWidget->setItem(row, 7, new QTableWidgetItem(QString::number(stat.p95, 'f', 3)));
+        ui->tableWidget->setItem(row, 5, new QTableWidgetItem(QString::number(stat.std_dev, 'f', 3)));
+        ui->tableWidget->setItem(row, 6, new QTableWidgetItem(QString::number(stat.median, 'f', 3)));
+        ui->tableWidget->setItem(row, 7, new QTableWidgetItem(QString::number(stat.p68, 'f', 3)));
+        ui->tableWidget->setItem(row, 8, new QTableWidgetItem(QString::number(stat.p95, 'f', 3)));
         row++;
     }
 }
