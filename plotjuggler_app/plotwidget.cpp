@@ -1635,10 +1635,43 @@ bool PlotWidget::canvasEventFilter(QEvent* event)
       }
 
       QMouseEvent* mouse_event = static_cast<QMouseEvent*>(event);
+      if (mouse_event->button() == Qt::LeftButton &&
+          mouse_event->modifiers() == Qt::NoModifier)
+      {
+          // 获取点击位置的曲线
+          const QPoint pos = mouse_event->pos();
+          QwtPlotCurve* clicked_curve = nullptr;
+          double dist = 10.0; // 像素距离阈值
 
+          // 检查所有曲线
+          for (const auto& curve_info : curveList()) {
+              QwtPlotCurve* curve = curve_info.curve;
+              if (curve->isVisible()) {
+                  double d;
+                  int index = curve->closestPoint(pos, &d);
+                  if (d < dist) {
+                      dist = d;
+                      clicked_curve = curve;
+                  }
+              }
+          }
+
+          // 处理高亮逻辑
+          if (clicked_curve) {
+              if (isCurveHighlighted(clicked_curve)) {
+                  unhighlightCurve();
+              }
+              else {
+                  highlightCurve(clicked_curve);
+              }
+              return true; // 事件已处理
+          }
+      }
+      // 其他情况保持原有逻辑...
       if (mouse_event->button() == Qt::LeftButton)
       {
         const QPoint press_point = mouse_event->pos();
+        
         if (mouse_event->modifiers() == Qt::ShiftModifier)  // time tracker
         {
           QPointF pointF(qwtPlot()->invTransform(QwtPlot::xBottom, press_point.x()),
@@ -1708,6 +1741,8 @@ bool PlotWidget::canvasEventFilter(QEvent* event)
   return false;
 }
 
+
+
 void PlotWidget::setDefaultRangeX()
 {
   if (!curveList().empty())
@@ -1731,6 +1766,40 @@ void PlotWidget::setDefaultRangeX()
   {
     setAxisScale(QwtPlot::xBottom, 0.0, 1.0);
   }
+}
+
+void PlotWidget::highlightCurve(QwtPlotCurve* curve)
+{
+    if (!_highlight_enabled || !curve) return;
+
+    // 如果已经有高亮曲线，先取消高亮
+    if (_highlighted_curve) {
+        unhighlightCurve();
+    }
+
+    // 保存原始样式并设置高亮样式
+    _original_pen = curve->pen();
+    QPen highlight_pen = _original_pen;
+    highlight_pen.setWidth(_original_pen.width() * 3); // 加粗线条
+    highlight_pen.setColor(Qt::red); // 设置为红色高亮
+    curve->setPen(highlight_pen);
+
+    _highlighted_curve = curve;
+    replot();
+}
+
+void PlotWidget::unhighlightCurve()
+{
+    if (_highlighted_curve) {
+        _highlighted_curve->setPen(_original_pen);
+        _highlighted_curve = nullptr;
+        replot();
+    }
+}
+
+bool PlotWidget::isCurveHighlighted(QwtPlotCurve* curve) const
+{
+    return _highlighted_curve == curve;
 }
 
 QwtSeriesWrapper* PlotWidget::createCurveXY(const PlotData* data_x,

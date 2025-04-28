@@ -181,7 +181,9 @@ private:
 
   QAction* _flip_x;
   QAction* _flip_y;
-
+  QwtPlotCurve* _highlighted_curve = nullptr;
+  QPen _original_pen; // 保存原始曲线样式
+  bool _highlight_enabled = true; // 是否启用高亮功能
   CurveTracker* _tracker;
   QwtPlotGrid* _grid;
 
@@ -212,7 +214,9 @@ private:
   void updateAvailableTransformers();
 
   void setDefaultRangeX();
-
+  void highlightCurve(QwtPlotCurve* curve);
+  void unhighlightCurve();
+  bool isCurveHighlighted(QwtPlotCurve* curve) const;
   QwtSeriesWrapper* createCurveXY(const PlotData* data_x, const PlotData* data_y);
 
   QwtSeriesWrapper* createTimeSeries(const PlotData* data,
