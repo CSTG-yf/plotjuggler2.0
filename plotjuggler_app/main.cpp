@@ -44,7 +44,7 @@
 #endif
 
 static QString VERSION_STRING =
-    QString("%1.%2.%3").arg(PJ_MAJOR_VERSION).arg(PJ_MINOR_VERSION).arg(PJ_PATCH_VERSION);
+    QString("%1.%2.%3.r1").arg(PJ_MAJOR_VERSION).arg(PJ_MINOR_VERSION).arg(PJ_PATCH_VERSION);
 
 inline int GetVersionNumber(QString str)
 {
@@ -151,7 +151,7 @@ QPixmap getFunnySplashscreen()
   }
 
   settings.setValue("previousFunnyMemesList", new_list);
-  auto filename = QString("://resources/memes/meme_%1.jpg").arg(n, 2, 10, QChar('0'));
+  auto filename = QString("://resources/memes/meme_%1.jpg").arg(1, 2, 10, QChar('0'));
   return QPixmap(filename);
 }
 

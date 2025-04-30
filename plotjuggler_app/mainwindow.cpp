@@ -386,6 +386,10 @@ MainWindow::MainWindow(const QCommandLineParser& commandline_parser, QWidget* pa
       settings.setValue("MainWindow.previousStreamingPlugin", _default_streamer);
     }
   }
+  QIcon custom_icon("://resources/my_custom_icon.png");
+  if (!custom_icon.isNull()) {
+      setWindowIcon(custom_icon);  // ¸²¸ÇÈ«¾ÖÍ¼±ê
+  }
 }
 
 MainWindow::~MainWindow()
