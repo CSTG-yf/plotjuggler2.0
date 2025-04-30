@@ -1626,122 +1626,178 @@ bool PlotWidget::isZoomLinkEnabled() const
 
 bool PlotWidget::canvasEventFilter(QEvent* event)
 {
-  switch (event->type())
-  {
+    switch (event->type())
+    {
     case QEvent::MouseButtonPress: {
-      if (_dragging.mode != DragInfo::NONE)
-      {
-        return true;  // don't pass to canvas().
-      }
-
-      QMouseEvent* mouse_event = static_cast<QMouseEvent*>(event);
-      if (mouse_event->button() == Qt::LeftButton &&
-          mouse_event->modifiers() == Qt::NoModifier)
-      {
-          // 获取点击位置的曲线
-          const QPoint pos = mouse_event->pos();
-          QwtPlotCurve* clicked_curve = nullptr;
-          double dist = 10.0; // 像素距离阈值
-
-          // 检查所有曲线
-          for (const auto& curve_info : curveList()) {
-              QwtPlotCurve* curve = curve_info.curve;
-              if (curve->isVisible()) {
-                  double d;
-                  int index = curve->closestPoint(pos, &d);
-                  if (d < dist) {
-                      dist = d;
-                      clicked_curve = curve;
-                  }
-              }
-          }
-
-          // 处理高亮逻辑
-          if (clicked_curve) {
-              if (isCurveHighlighted(clicked_curve)) {
-                  unhighlightCurve();
-              }
-              else {
-                  highlightCurve(clicked_curve);
-              }
-              return true; // 事件已处理
-          }
-      }
-      // 其他情况保持原有逻辑...
-      if (mouse_event->button() == Qt::LeftButton)
-      {
-        const QPoint press_point = mouse_event->pos();
-        
-        if (mouse_event->modifiers() == Qt::ShiftModifier)  // time tracker
+        if (_dragging.mode != DragInfo::NONE)
         {
-          QPointF pointF(qwtPlot()->invTransform(QwtPlot::xBottom, press_point.x()),
-                         qwtPlot()->invTransform(QwtPlot::yLeft, press_point.y()));
-          emit trackerMoved(pointF);
-          return true;  // don't pass to canvas().
+            return true;  // don't pass to canvas().
         }
-        else if (mouse_event->modifiers() == Qt::ControlModifier)  // panner
+
+        QMouseEvent* mouse_event = static_cast<QMouseEvent*>(event);
+        if (mouse_event->button() == Qt::LeftButton &&
+            mouse_event->modifiers() == Qt::NoModifier)
         {
-          overrideCursonMove();
+            // 获取点击位置
+            const QPoint pos = mouse_event->pos();
+            QwtPlotCurve* clicked_curve = nullptr;
+
+            // 检查所有曲线，找到距离点击位置最近的曲线
+            double min_dist = std::numeric_limits<double>::max();
+
+            for (const auto& curve_info : curveList()) {
+                QwtPlotCurve* curve = curve_info.curve;
+                if (curve->isVisible()) {
+                    // 计算曲线到点击位置的距离
+                    double dist = curveDistance(curve, pos);
+                    if (dist < min_dist) {
+                        min_dist = dist;
+                        clicked_curve = curve;
+                    }
+                }
+            }
+
+            // 设置高亮阈值（可根据需要调整）
+            const double highlight_threshold = 10.0;
+
+            // 处理高亮逻辑
+            if (clicked_curve && min_dist < highlight_threshold) {
+                if (isCurveHighlighted(clicked_curve)) {
+                    unhighlightCurve();
+                }
+                else {
+                    highlightCurve(clicked_curve);
+                }
+                return true; // 事件已处理
+            }
         }
-        return false;  // send to canvas()
-      }
-      else if (mouse_event->buttons() == Qt::MiddleButton &&
-               mouse_event->modifiers() == Qt::NoModifier)
-      {
-        overrideCursonMove();
-        return false;
-      }
-      else if (mouse_event->button() == Qt::RightButton)
-      {
-        if (mouse_event->modifiers() == Qt::NoModifier)  // show menu
+
+        // 其他情况保持原有逻辑
+        if (mouse_event->button() == Qt::LeftButton)
         {
-          canvasContextMenuTriggered(mouse_event->pos());
-          return true;  // don't pass to canvas().
+            const QPoint press_point = mouse_event->pos();
+
+            if (mouse_event->modifiers() == Qt::ShiftModifier)  // time tracker
+            {
+                QPointF pointF(qwtPlot()->invTransform(QwtPlot::xBottom, press_point.x()),
+                    qwtPlot()->invTransform(QwtPlot::yLeft, press_point.y()));
+                emit trackerMoved(pointF);
+                return true;  // don't pass to canvas().
+            }
+            else if (mouse_event->modifiers() == Qt::ControlModifier)  // panner
+            {
+                overrideCursonMove();
+            }
+            return false;  // send to canvas()
         }
-      }
+        else if (mouse_event->buttons() == Qt::MiddleButton &&
+            mouse_event->modifiers() == Qt::NoModifier)
+        {
+            overrideCursonMove();
+            return false;
+        }
+        else if (mouse_event->button() == Qt::RightButton)
+        {
+            if (mouse_event->modifiers() == Qt::NoModifier)  // show menu
+            {
+                canvasContextMenuTriggered(mouse_event->pos());
+                return true;  // don't pass to canvas().
+            }
+        }
     }
-    break;
-      //---------------------------------
+                                 break;
+                                 //---------------------------------
     case QEvent::MouseMove: {
-      if (_dragging.mode != DragInfo::NONE)
-      {
-        return true;  // don't pass to canvas().
-      }
+        if (_dragging.mode != DragInfo::NONE)
+        {
+            return true;  // don't pass to canvas().
+        }
 
-      QMouseEvent* mouse_event = static_cast<QMouseEvent*>(event);
+        QMouseEvent* mouse_event = static_cast<QMouseEvent*>(event);
 
-      if (mouse_event->buttons() == Qt::LeftButton &&
-          mouse_event->modifiers() == Qt::ShiftModifier)
-      {
-        const QPoint point = mouse_event->pos();
-        QPointF pointF(qwtPlot()->invTransform(QwtPlot::xBottom, point.x()),
-                       qwtPlot()->invTransform(QwtPlot::yLeft, point.y()));
-        emit trackerMoved(pointF);
-        return true;
-      }
+        if (mouse_event->buttons() == Qt::LeftButton &&
+            mouse_event->modifiers() == Qt::ShiftModifier)
+        {
+            const QPoint point = mouse_event->pos();
+            QPointF pointF(qwtPlot()->invTransform(QwtPlot::xBottom, point.x()),
+                qwtPlot()->invTransform(QwtPlot::yLeft, point.y()));
+            emit trackerMoved(pointF);
+            return true;
+        }
     }
-    break;
+                          break;
 
     case QEvent::Leave: {
-      _dragging.mode = DragInfo::NONE;
-      _dragging.curves.clear();
+        _dragging.mode = DragInfo::NONE;
+        _dragging.curves.clear();
     }
-    break;
+                      break;
     case QEvent::MouseButtonRelease: {
-      if (_dragging.mode == DragInfo::NONE)
-      {
-        QApplication::restoreOverrideCursor();
-        return false;
-      }
+        if (_dragging.mode == DragInfo::NONE)
+        {
+            QApplication::restoreOverrideCursor();
+            return false;
+        }
     }
-    break;
+                                   break;
 
-  }  // end switch
+    }  // end switch
 
-  return false;
+    return false;
 }
 
+double PlotWidget::curveDistance(QwtPlotCurve* curve, const QPoint& pos) const
+{
+    const QwtSeriesData<QPointF>* series = curve->data();
+    if (series->size() < 2) {
+        return std::numeric_limits<double>::max();
+    }
 
+    double min_dist = std::numeric_limits<double>::max();
+    const QwtScaleMap xMap = qwtPlot()->canvasMap(QwtPlot::xBottom);
+    const QwtScaleMap yMap = qwtPlot()->canvasMap(QwtPlot::yLeft);
+
+    // 检查所有线段
+    for (size_t i = 1; i < series->size(); ++i) {
+        QPointF p1 = series->sample(i - 1);
+        QPointF p2 = series->sample(i);
+
+        // 转换到屏幕坐标
+        QPoint screen_p1(xMap.transform(p1.x()), yMap.transform(p1.y()));
+        QPoint screen_p2(xMap.transform(p2.x()), yMap.transform(p2.y()));
+
+        // 计算线段到点的距离
+        double dist = distanceToLine(pos, screen_p1, screen_p2);
+        if (dist < min_dist) {
+            min_dist = dist;
+        }
+    }
+
+    return min_dist;
+}
+
+double PlotWidget::distanceToLine(const QPoint& point, const QPoint& line_p1, const QPoint& line_p2) const
+{
+    const QPoint line_vec = line_p2 - line_p1;
+    const QPoint point_vec = point - line_p1;
+
+    const double line_length_squared = line_vec.x() * line_vec.x() + line_vec.y() * line_vec.y();
+    if (line_length_squared == 0.0) {
+        // 线段长度为0，退化为点到点的距离
+        return std::sqrt(point_vec.x() * point_vec.x() + point_vec.y() * point_vec.y());
+    }
+
+    // 计算投影比例
+    const double t = std::max(0.0, std::min(1.0,
+        (point_vec.x() * line_vec.x() + point_vec.y() * line_vec.y()) / line_length_squared));
+
+    // 计算投影点
+    const QPoint projection = line_p1 + t * line_vec;
+
+    // 返回点到投影点的距离
+    const QPoint diff = point - projection;
+    return std::sqrt(diff.x() * diff.x() + diff.y() * diff.y());
+}
 
 void PlotWidget::setDefaultRangeX()
 {

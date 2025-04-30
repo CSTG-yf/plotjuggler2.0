@@ -161,6 +161,8 @@ private slots:
   void canvasContextMenuTriggered(const QPoint& pos);
   
   void on_externallyResized(const QRectF& new_rect);
+  double curveDistance(QwtPlotCurve* curve, const QPoint& pos) const;
+  double distanceToLine(const QPoint& point, const QPoint& line_p1, const QPoint& line_p2) const;
 
 private:
   QAction* _action_removeAllCurves;
