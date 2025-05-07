@@ -1,0 +1,271 @@
+cmake_minimum_required(VERSION 3.10.2)
+
+PROJECT(plotjuggler LANGUAGES C CXX VERSION 3.9.3)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH}  "${CMAKE_CURRENT_LIST_DIR}/cmake")
+
+add_definitions(
+    -DPJ_MAJOR_VERSION=${PROJECT_VERSION_MAJOR}
+    -DPJ_MINOR_VERSION=${PROJECT_VERSION_MINOR}
+    -DPJ_PATCH_VERSION=${PROJECT_VERSION_PATCH} )
+
+# You can add some command line arguments at compilation time
+# Use _0x3b_ instead of semicolon
+
+#set(PJ_DEFAULT_ARGS "-n --enabled_plugins=libDataLoadCSV_0x3b_libDataStreamSample")
+#add_definitions( -DPJ_DEFAULT_ARGS="${PJ_DEFAULT_ARGS}")
+
+option(ENABLE_ASAN "Enable Address Sanitizer" OFF)
+option(BUILDING_WITH_CONAN "Using Conan for depenencies" OFF)
+
+IF (NOT WIN32 AND ENABLE_ASAN)
+  set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
+  set (CMAKE_LINKER_FLAGS "${CMAKE_LINKER_FLAGS} -fno-omit-frame-pointer -fsanitize=address")
+endif()
+
+
+include_directories( plotjuggler_base/include )
+include_directories( plotjuggler_base/src )
+
+add_definitions( -DFMT_HEADER_ONLY )
+
+
+if(VCPKG_TOOLCHAIN)
+    set(BUILDING_WITH_VCPKG ON)
+    message(STATUS "BUILDING_WITH_VCPKG")
+endif()
+
+find_package(ament_cmake QUIET)
+
+if(ament_cmake_FOUND)
+    set(COMPILING_WITH_AMENT 1)
+
+    find_package(ament_cmake REQUIRED)
+    find_package(ament_index_cpp REQUIRED)
+    find_package(rclcpp REQUIRED)
+    include_directories(${ament_index_cpp_INCLUDE_DIRS})
+
+    message(STATUS "--------------------------------------------------")
+    message(STATUS "PlotJuggler is being built using AMENT.")
+    message(STATUS "--------------------------------------------------")
+
+    add_definitions(-DCOMPILED_WITH_AMENT)
+
+else()
+    message(STATUS "--------------------------------------------------")
+    message(STATUS "PlotJuggler is being built WITHOUT any ROS support")
+    message(STATUS "--------------------------------------------------")
+endif()
+
+cmake_policy (SET CMP0020 NEW)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOMOC ON)
+SET(CMAKE_AUTOUIC ON)
+
+
+if(APPLE AND EXISTS /usr/local/opt/qt5)
+    # Homebrew installs Qt5 (up to at least 5.9.1) in
+    # /usr/local/qt5, ensure it can be found by CMake since
+    # it is not in the default /usr/local prefix.
+    # source: https://github.com/Homebrew/homebrew-core/issues/8392#issuecomment-325226494
+    list(APPEND CMAKE_PREFIX_PATH "/usr/local/opt/qt5")
+    set(CMAKE_MACOSX_RPATH 1)
+elseif(APPLE AND EXISTS /opt/homebrew/opt/qt@5)
+    list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/opt/qt@5")
+    set(CMAKE_MACOSX_RPATH 1)
+endif()
+
+find_package(Qt5 REQUIRED COMPONENTS
+    Core
+    Widgets
+    PrintSupport
+    Concurrent
+    Xml
+    Svg
+    OpenGL
+    WebSockets
+    Network)
+
+set( QT_LINK_LIBRARIES
+    Qt5::Core
+    Qt5::Widgets
+    Qt5::PrintSupport
+    Qt5::Xml
+    Qt5::Concurrent
+    Qt5::Svg
+    Qt5::OpenGL
+    Qt5::WebSockets
+    )
+
+
+if (NOT CMAKE_BUILD_TYPE)
+    message(STATUS "No build type selected, default to RelWithDebInfo")
+    set(CMAKE_BUILD_TYPE "RelWithDebInfo")
+endif()
+
+IF (WIN32)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -D_USE_MATH_DEFINES")
+    set(CMAKE_WIN32_EXECUTABLE ON)
+    set(GUI_TYPE WIN32)
+    if(MSVC)
+        add_compile_options(/wd4267)
+    endif()
+else()
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -fPIC -fno-omit-frame-pointer")
+    add_compile_options(-Wno-deprecated-declarations)
+ENDIF()
+
+include_directories(
+    ${Qt5Core_INCLUDE_DIRS}
+    ${Qt5Widgets_INCLUDE_DIRS}
+    ${Qt5Concurrent_INCLUDE_DIRS}
+    ${Qt5PrintSupport_INCLUDE_DIRS}
+    ${Qt5Xml_INCLUDE_DIRS}
+    ${Qt5WebSockets_INCLUDE_DIRS}
+    ${Qt5Svg_INCLUDE_DIRS}
+    ${Qt5OpenGL_INCLUDE_DIRS}
+    ./3rdparty/color_widgets/include
+    ./3rdparty/Qt-Advanced-Docking/include
+    ./3rdparty/qwt/src
+    ./3rdparty/QCodeEditor/include
+)
+
+#########################  BASE library  ####################################
+
+set(PLOTJUGGLER_BASE_SRC
+    plotjuggler_base/src/plotdata.cpp
+    plotjuggler_base/src/datastreamer_base.cpp
+    plotjuggler_base/src/transform_function.cpp
+    plotjuggler_base/src/plotwidget_base.cpp
+    plotjuggler_base/src/plotzoomer.cpp
+    plotjuggler_base/src/plotmagnifier.cpp
+    plotjuggler_base/src/plotlegend.cpp
+    plotjuggler_base/src/plotpanner.cpp
+    plotjuggler_base/src/timeseries_qwt.cpp
+    plotjuggler_base/src/reactive_function.cpp
+)
+
+qt5_wrap_cpp(PLOTJUGGLER_BASE_MOCS
+  plotjuggler_base/include/PlotJuggler/dataloader_base.h
+  plotjuggler_base/include/PlotJuggler/statepublisher_base.h
+  plotjuggler_base/include/PlotJuggler/toolbox_base.h
+  plotjuggler_base/include/PlotJuggler/datastreamer_base.h
+  plotjuggler_base/include/PlotJuggler/transform_function.h
+  plotjuggler_base/include/PlotJuggler/plotwidget_base.h
+)
+
+add_library(plotjuggler_base STATIC
+    ${PLOTJUGGLER_BASE_SRC}
+    ${PLOTJUGGLER_BASE_MOCS}
+)
+
+target_link_libraries(plotjuggler_base PUBLIC
+    plotjuggler_qwt
+    lua
+    sol2
+)
+
+target_include_directories(plotjuggler_base INTERFACE
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+  $<INSTALL_INTERFACE:include>
+)
+
+#########################  INSTALL  ####################################
+
+if(COMPILING_WITH_AMENT)
+
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    set(PJ_PLUGIN_INSTALL_DIRECTORY lib/${PROJECT_NAME} )
+
+    ament_export_targets(
+        ${PROJECT_NAME}Targets
+        export_plotjuggler_qwt
+        HAS_LIBRARY_TARGET)
+    ament_package()
+
+else()
+
+    set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    set(PJ_PLUGIN_INSTALL_DIRECTORY bin)
+
+endif()
+
+set(DESKTOP_ICON_DIR "${CMAKE_INSTALL_PREFIX}/share/icons")
+
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/PlotJuggler.desktop
+        DESTINATION  "${CMAKE_INSTALL_PREFIX}/share/applications"  )
+
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/plotjuggler.svg
+        DESTINATION ${DESKTOP_ICON_DIR}  )
+
+######################## Main App, Libraries and Plugins ###################################
+
+include(FetchContent)
+include(cmake/CPM.cmake)
+
+add_subdirectory( 3rdparty )
+add_subdirectory( plotjuggler_app )
+add_subdirectory( plotjuggler_plugins)
+
+# Install targets
+
+install(
+     TARGETS
+        plotjuggler_base plotjuggler_qwt lua sol2
+     EXPORT ${PROJECT_NAME}Targets
+     LIBRARY DESTINATION lib
+     ARCHIVE DESTINATION lib
+     RUNTIME DESTINATION bin
+     INCLUDES DESTINATION include)
+
+install(DIRECTORY plotjuggler_base/include/ DESTINATION include )
+
+export(PACKAGE ${PROJECT_NAME})
+
+if(NOT COMPILING_WITH_AMENT)
+
+    include(GNUInstallDirs)
+
+    set(PJ_CMAKECONFIG_INSTALL_DIR ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME})
+
+    install(
+      EXPORT ${PROJECT_NAME}Targets
+      FILE ${PROJECT_NAME}Targets.cmake
+      DESTINATION ${PJ_CMAKECONFIG_INSTALL_DIR}
+    )
+
+    include(CMakePackageConfigHelpers)
+
+    set(PJ_INCLUDE_INSTALL_DIR include)
+
+    configure_package_config_file(
+      ${CMAKE_CURRENT_SOURCE_DIR}/cmake/Config.cmake.in
+      ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake
+      INSTALL_DESTINATION ${PJ_CMAKECONFIG_INSTALL_DIR}
+      PATH_VARS PJ_INCLUDE_INSTALL_DIR
+    )
+
+    # This requires to declare the project version in the project() macro
+    write_basic_package_version_file(
+     "${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
+     VERSION ${PROJECT_VERSION}
+     COMPATIBILITY SameMajorVersion
+    )
+
+    message (STATUS "CMAKE_CURRENT_BINARY_DIR = ${CMAKE_CURRENT_BINARY_DIR}")
+
+    install(
+      FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake
+        ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake
+      DESTINATION ${PJ_CMAKECONFIG_INSTALL_DIR}
+    )
+
+endif()
