@@ -2,7 +2,7 @@
 #include "ui_statistics_dialog.h"
 #include <QTableWidgetItem>
 #include <numeric> // for std::accumulate
-#include <qwt_text.h>  // Ìí¼ÓQwtTextÍ·ÎÄ¼þ
+#include <qwt_text.h>  // ï¿½ï¿½ï¿½ï¿½QwtTextÍ·ï¿½Ä¼ï¿½
 #include<cmath>
 StatisticsDialog::StatisticsDialog(PlotWidget* parent)
     : QDialog(parent), ui(new Ui::statistics_dialog), _parent(parent)
@@ -12,7 +12,7 @@ StatisticsDialog::StatisticsDialog(PlotWidget* parent)
     setWindowTitle(QString("Statistics | %1").arg(_parent->windowTitle()));
     setWindowFlag(Qt::Tool);
 
-    // ÉèÖÃ±í¸ñÁÐÊýºÍ±êÌâ£¨9ÁÐ£©
+    // ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í±ï¿½ï¿½â£¨9ï¿½Ð£ï¿½
     ui->tableWidget->setColumnCount(9);
     QStringList headers = { "Curve", "Count", "Min", "Max", "Mean", "Median","Std Dev", "68%", "95%"};
     ui->tableWidget->setHorizontalHeaderLabels(headers);
@@ -60,7 +60,7 @@ void StatisticsDialog::update(Range range)
 
         if (stat.count > 0)
         {
-            // ¼ÆËã»ù±¾Í³¼ÆÁ¿
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ï¿½ï¿½
             auto [min_it, max_it] = std::minmax_element(stat.y_values.begin(), stat.y_values.end());
             stat.min = *min_it;
             stat.max = *max_it;
@@ -70,17 +70,17 @@ void StatisticsDialog::update(Range range)
                 sum_sq += (y - stat.mean) * (y - stat.mean);
             }
             stat.std_dev = std::sqrt(sum_sq / stat.count);
-            // ÅÅÐòÒÔ¼ÆËã°Ù·ÖÎ»Êý
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ù·ï¿½Î»ï¿½ï¿½
             std::sort(abs_values.begin(), abs_values.end());
-            stat.median = abs_values[abs_values.size() / 2];  // 50%ÖÐÎ»Êý
-            stat.p68 = abs_values[static_cast<int>(abs_values.size() * 0.68)];  // 68%µã
-            stat.p95 = abs_values[static_cast<int>(abs_values.size() * 0.95)];  // 95%µã
+            stat.median = abs_values[abs_values.size() / 2];  // 50%ï¿½ï¿½Î»ï¿½ï¿½
+            stat.p68 = abs_values[static_cast<int>(abs_values.size() * 0.68)];  // 68%ï¿½ï¿½
+            stat.p95 = abs_values[static_cast<int>(abs_values.size() * 0.95)];  // 95%ï¿½ï¿½
         }
 
         statistics[info.curve->title().text()] = stat;
     }
 
-    // ¸üÐÂ±í¸ñ
+    // ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½
     ui->tableWidget->setRowCount(statistics.size());
     int row = 0;
     for (const auto& [name, stat] : statistics)
@@ -90,8 +90,8 @@ void StatisticsDialog::update(Range range)
         ui->tableWidget->setItem(row, 2, new QTableWidgetItem(QString::number(stat.min, 'f', 3)));
         ui->tableWidget->setItem(row, 3, new QTableWidgetItem(QString::number(stat.max, 'f', 3)));
         ui->tableWidget->setItem(row, 4, new QTableWidgetItem(QString::number(stat.mean, 'f', 3)));
-        ui->tableWidget->setItem(row, 5, new QTableWidgetItem(QString::number(stat.std_dev, 'f', 3)));
-        ui->tableWidget->setItem(row, 6, new QTableWidgetItem(QString::number(stat.median, 'f', 3)));
+        ui->tableWidget->setItem(row, 5, new QTableWidgetItem(QString::number(stat.median, 'f', 3)));
+        ui->tableWidget->setItem(row, 6, new QTableWidgetItem(QString::number(stat.std_dev, 'f', 3)));
         ui->tableWidget->setItem(row, 7, new QTableWidgetItem(QString::number(stat.p68, 'f', 3)));
         ui->tableWidget->setItem(row, 8, new QTableWidgetItem(QString::number(stat.p95, 'f', 3)));
         row++;
