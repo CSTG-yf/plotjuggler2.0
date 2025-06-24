@@ -226,6 +226,9 @@ void PlotWidget::buildActions()
   _flip_y->setCheckable(true);
   connect(_flip_y, &QAction::changed, this, &PlotWidget::onFlipAxis);
 
+  _action_setXRange = new QAction("Set X Axis Range", this);
+  connect(_action_setXRange, &QAction::triggered, this, &PlotWidget::onSetXAxisRangeTriggered);
+
   _action_data_statistics = new QAction("&Show data statistics", this);
   connect(_action_data_statistics, &QAction::triggered, this,
           &PlotWidget::onShowDataStatistics);
@@ -259,6 +262,7 @@ void PlotWidget::canvasContextMenuTriggered(const QPoint& pos)
 
   menu.addAction(_action_edit);
   menu.addAction(_action_formula);
+  menu.addAction(_action_setXRange);
   menu.addSeparator();
   menu.addAction(_action_split_horizontal);
   menu.addAction(_action_split_vertical);
@@ -311,6 +315,18 @@ void PlotWidget::onShowPointsTriggered(bool show)
         it.curve->setSymbol(symbol);
     }
     replot();
+}
+
+void PlotWidget::onSetXAxisRangeTriggered() {
+    bool okMin, okMax;
+    // ä¿®æ­£ï¼šè¡¥å…¨getDoubleå‚æ•°ï¼ˆçˆ¶çª—å£ã€æ ‡é¢˜ã€æ ‡ç­¾ã€é»˜è®¤å€¼ã€æœ€å°å€¼ã€æœ€å¤§å€¼ã€å°æ•°ä½ã€ç¡®è®¤æŒ‡é’ˆï¼‰
+    double minX = QInputDialog::getDouble(this, "Set X Axis Range", "Min:", 0, -1e9, 1e9, 6, &okMin);
+    double maxX = QInputDialog::getDouble(this, "Set X Axis Range", "Max:", 0, -1e9, 1e9, 6, &okMax);
+
+    if (okMin && okMax && minX < maxX) {
+        qwtPlot()->setAxisScale(QwtPlot::xBottom, minX, maxX); // è®¾ç½®Xè½´èŒƒå›´
+        qwtPlot()->replot(); // åˆ·æ–°ç»˜å›¾
+    }
 }
 PlotWidget::CurveInfo* PlotWidget::addCurveXY(std::string name_x, std::string name_y,
                                               QString curve_name)
@@ -1638,17 +1654,17 @@ bool PlotWidget::canvasEventFilter(QEvent* event)
         if (mouse_event->button() == Qt::LeftButton &&
             mouse_event->modifiers() == Qt::NoModifier)
         {
-            // »ñÈ¡µã»÷Î»ÖÃ
+            // ï¿½ï¿½È¡ï¿½ï¿½ï¿½Î»ï¿½ï¿½
             const QPoint pos = mouse_event->pos();
             QwtPlotCurve* clicked_curve = nullptr;
 
-            // ¼ì²éËùÓĞÇúÏß£¬ÕÒµ½¾àÀëµã»÷Î»ÖÃ×î½üµÄÇúÏß
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             double min_dist = std::numeric_limits<double>::max();
 
             for (const auto& curve_info : curveList()) {
                 QwtPlotCurve* curve = curve_info.curve;
                 if (curve->isVisible()) {
-                    // ¼ÆËãÇúÏßµ½µã»÷Î»ÖÃµÄ¾àÀë
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½Î»ï¿½ÃµÄ¾ï¿½ï¿½ï¿½
                     double dist = curveDistance(curve, pos);
                     if (dist < min_dist) {
                         min_dist = dist;
@@ -1657,10 +1673,10 @@ bool PlotWidget::canvasEventFilter(QEvent* event)
                 }
             }
 
-            // ÉèÖÃ¸ßÁÁãĞÖµ£¨¿É¸ù¾İĞèÒªµ÷Õû£©
+            // ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½É¸ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             const double highlight_threshold = 10.0;
 
-            // ´¦Àí¸ßÁÁÂß¼­
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½
             if (clicked_curve && min_dist < highlight_threshold) {
                 if (isCurveHighlighted(clicked_curve)) {
                     unhighlightCurve();
@@ -1668,11 +1684,11 @@ bool PlotWidget::canvasEventFilter(QEvent* event)
                 else {
                     highlightCurve(clicked_curve);
                 }
-                return true; // ÊÂ¼şÒÑ´¦Àí
+                return true; // ï¿½Â¼ï¿½ï¿½Ñ´ï¿½ï¿½ï¿½
             }
         }
 
-        // ÆäËûÇé¿ö±£³ÖÔ­ÓĞÂß¼­
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ß¼ï¿½
         if (mouse_event->button() == Qt::LeftButton)
         {
             const QPoint press_point = mouse_event->pos();
@@ -1757,16 +1773,16 @@ double PlotWidget::curveDistance(QwtPlotCurve* curve, const QPoint& pos) const
     const QwtScaleMap xMap = qwtPlot()->canvasMap(QwtPlot::xBottom);
     const QwtScaleMap yMap = qwtPlot()->canvasMap(QwtPlot::yLeft);
 
-    // ¼ì²éËùÓĞÏß¶Î
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¶ï¿½
     for (size_t i = 1; i < series->size(); ++i) {
         QPointF p1 = series->sample(i - 1);
         QPointF p2 = series->sample(i);
 
-        // ×ª»»µ½ÆÁÄ»×ø±ê
+        // ×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½
         QPoint screen_p1(xMap.transform(p1.x()), yMap.transform(p1.y()));
         QPoint screen_p2(xMap.transform(p2.x()), yMap.transform(p2.y()));
 
-        // ¼ÆËãÏß¶Îµ½µãµÄ¾àÀë
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ß¶Îµï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
         double dist = distanceToLine(pos, screen_p1, screen_p2);
         if (dist < min_dist) {
             min_dist = dist;
@@ -1783,18 +1799,18 @@ double PlotWidget::distanceToLine(const QPoint& point, const QPoint& line_p1, co
 
     const double line_length_squared = line_vec.x() * line_vec.x() + line_vec.y() * line_vec.y();
     if (line_length_squared == 0.0) {
-        // Ïß¶Î³¤¶ÈÎª0£¬ÍË»¯Îªµãµ½µãµÄ¾àÀë
+        // ï¿½ß¶Î³ï¿½ï¿½ï¿½Îª0ï¿½ï¿½ï¿½Ë»ï¿½Îªï¿½ãµ½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
         return std::sqrt(point_vec.x() * point_vec.x() + point_vec.y() * point_vec.y());
     }
 
-    // ¼ÆËãÍ¶Ó°±ÈÀı
+    // ï¿½ï¿½ï¿½ï¿½Í¶Ó°ï¿½ï¿½ï¿½ï¿½
     const double t = std::max(0.0, std::min(1.0,
         (point_vec.x() * line_vec.x() + point_vec.y() * line_vec.y()) / line_length_squared));
 
-    // ¼ÆËãÍ¶Ó°µã
+    // ï¿½ï¿½ï¿½ï¿½Í¶Ó°ï¿½ï¿½
     const QPoint projection = line_p1 + t * line_vec;
 
-    // ·µ»Øµãµ½Í¶Ó°µãµÄ¾àÀë
+    // ï¿½ï¿½ï¿½Øµãµ½Í¶Ó°ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
     const QPoint diff = point - projection;
     return std::sqrt(diff.x() * diff.x() + diff.y() * diff.y());
 }
@@ -1828,16 +1844,16 @@ void PlotWidget::highlightCurve(QwtPlotCurve* curve)
 {
     if (!_highlight_enabled || !curve) return;
 
-    // Èç¹ûÒÑ¾­ÓĞ¸ßÁÁÇúÏß£¬ÏÈÈ¡Ïû¸ßÁÁ
+    // ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½Ğ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     if (_highlighted_curve) {
         unhighlightCurve();
     }
 
-    // ±£´æÔ­Ê¼ÑùÊ½²¢ÉèÖÃ¸ßÁÁÑùÊ½
+    // ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
     _original_pen = curve->pen();
     QPen highlight_pen = _original_pen;
-    highlight_pen.setWidth(_original_pen.width() * 3); // ¼Ó´ÖÏßÌõ
-    highlight_pen.setColor(Qt::red); // ÉèÖÃÎªºìÉ«¸ßÁÁ
+    highlight_pen.setWidth(_original_pen.width() * 3); // ï¿½Ó´ï¿½ï¿½ï¿½ï¿½ï¿½
+    highlight_pen.setColor(Qt::red); // ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
     curve->setPen(highlight_pen);
 
     _highlighted_curve = curve;

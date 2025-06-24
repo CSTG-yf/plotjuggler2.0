@@ -142,6 +142,8 @@ public slots:
 
   void onShowDataStatistics();
 
+  void onSetXAxisRangeTriggered();
+
 private slots:
 
   // void on_changeToBuiltinTransforms(QString new_transform);
@@ -181,11 +183,12 @@ private:
   QAction* _action_paste;
   QAction* _action_image_to_clipboard;
 
+  QAction* _action_setXRange;
   QAction* _flip_x;
   QAction* _flip_y;
   QwtPlotCurve* _highlighted_curve = nullptr;
-  QPen _original_pen; // ±£´æÔ­Ê¼ÇúÏßÑùÊ½
-  bool _highlight_enabled = true; // ÊÇ·ñÆôÓÃ¸ßÁÁ¹¦ÄÜ
+  QPen _original_pen; // ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+  bool _highlight_enabled = true; // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   CurveTracker* _tracker;
   QwtPlotGrid* _grid;
 
