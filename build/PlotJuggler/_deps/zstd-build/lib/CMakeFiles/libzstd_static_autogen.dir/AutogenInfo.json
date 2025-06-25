@@ -1,0 +1,601 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen",
+	"CMAKE_BINARY_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib",
+	"CMAKE_EXECUTABLE" : "D:/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib/CMakeLists.txt",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/CMakeModules/JoinPaths.cmake",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/libzstd.pc.in",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib/cmake_uninstall.cmake.in"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/gitproject/plotjuggler2",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/allocations.h",
+			"MU",
+			"2R45Z4CXRR/moc_allocations.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/bits.h",
+			"MU",
+			"2R45Z4CXRR/moc_bits.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/bitstream.h",
+			"MU",
+			"2R45Z4CXRR/moc_bitstream.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/compiler.h",
+			"MU",
+			"2R45Z4CXRR/moc_compiler.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/cpu.h",
+			"MU",
+			"2R45Z4CXRR/moc_cpu.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/debug.h",
+			"MU",
+			"2R45Z4CXRR/moc_debug.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/error_private.h",
+			"MU",
+			"2R45Z4CXRR/moc_error_private.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/fse.h",
+			"MU",
+			"2R45Z4CXRR/moc_fse.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/huf.h",
+			"MU",
+			"2R45Z4CXRR/moc_huf.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/mem.h",
+			"MU",
+			"2R45Z4CXRR/moc_mem.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/pool.h",
+			"MU",
+			"2R45Z4CXRR/moc_pool.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/portability_macros.h",
+			"MU",
+			"2R45Z4CXRR/moc_portability_macros.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/threading.h",
+			"MU",
+			"2R45Z4CXRR/moc_threading.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/xxhash.h",
+			"MU",
+			"2R45Z4CXRR/moc_xxhash.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/zstd_deps.h",
+			"MU",
+			"2R45Z4CXRR/moc_zstd_deps.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/zstd_internal.h",
+			"MU",
+			"2R45Z4CXRR/moc_zstd_internal.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/zstd_trace.h",
+			"MU",
+			"2R45Z4CXRR/moc_zstd_trace.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/clevels.h",
+			"MU",
+			"LO26JSZNWG/moc_clevels.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/hist.h",
+			"MU",
+			"LO26JSZNWG/moc_hist.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress_internal.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_compress_internal.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress_literals.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_compress_literals.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress_sequences.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_compress_sequences.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress_superblock.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_compress_superblock.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_cwksp.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_cwksp.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_double_fast.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_double_fast.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_fast.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_fast.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_lazy.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_lazy.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_ldm.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_ldm.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_ldm_geartab.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_ldm_geartab.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_opt.h",
+			"MU",
+			"LO26JSZNWG/moc_zstd_opt.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstdmt_compress.h",
+			"MU",
+			"LO26JSZNWG/moc_zstdmt_compress.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/decompress/zstd_ddict.h",
+			"MU",
+			"ZYHVSUKBJZ/moc_zstd_ddict.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/decompress/zstd_decompress_block.h",
+			"MU",
+			"ZYHVSUKBJZ/moc_zstd_decompress_block.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/decompress/zstd_decompress_internal.h",
+			"MU",
+			"ZYHVSUKBJZ/moc_zstd_decompress_internal.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/dictBuilder/cover.h",
+			"MU",
+			"RDXQ5QM2W3/moc_cover.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/dictBuilder/divsufsort.h",
+			"MU",
+			"RDXQ5QM2W3/moc_divsufsort.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/zdict.h",
+			"MU",
+			"SJXSUFRU7B/moc_zdict.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/zstd.h",
+			"MU",
+			"SJXSUFRU7B/moc_zstd.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/zstd_errors.h",
+			"MU",
+			"SJXSUFRU7B/moc_zstd_errors.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/include",
+	"INCLUDE_DIR_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/mocs_compilation_MinSizeRel.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/libzstd_static_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"QT_PLUGIN",
+		"WIN32",
+		"XXH_NAMESPACE=ZSTD_",
+		"ZSTD_HEAPMODE=0",
+		"ZSTD_LEGACY_SUPPORT=0",
+		"_CRT_SECURE_NO_WARNINGS"
+	],
+	"MOC_DEFINITIONS_MinSizeRel" : 
+	[
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"QT_PLUGIN",
+		"WIN32",
+		"XXH_NAMESPACE=ZSTD_",
+		"ZSTD_HEAPMODE=0",
+		"ZSTD_LEGACY_SUPPORT=0",
+		"_CRT_SECURE_NO_WARNINGS"
+	],
+	"MOC_DEFINITIONS_RelWithDebInfo" : 
+	[
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"QT_PLUGIN",
+		"WIN32",
+		"XXH_NAMESPACE=ZSTD_",
+		"ZSTD_HEAPMODE=0",
+		"ZSTD_LEGACY_SUPPORT=0",
+		"_CRT_SECURE_NO_WARNINGS"
+	],
+	"MOC_DEFINITIONS_Release" : 
+	[
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"QT_PLUGIN",
+		"WIN32",
+		"XXH_NAMESPACE=ZSTD_",
+		"ZSTD_HEAPMODE=0",
+		"ZSTD_LEGACY_SUPPORT=0",
+		"_CRT_SECURE_NO_WARNINGS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include"
+	],
+	"MOC_INCLUDES_MinSizeRel" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 10,
+	"PARSE_CACHE_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "D:/QT/5.15.2/msvc2019_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "D:/QT/5.15.2/msvc2019_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-build/lib/CMakeFiles/libzstd_static_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/debug.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/entropy_common.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/error_private.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/fse_decompress.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/pool.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/threading.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/xxhash.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/common/zstd_common.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/fse_compress.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/hist.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/huf_compress.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress_literals.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress_sequences.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_compress_superblock.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_double_fast.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_fast.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_lazy.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_ldm.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstd_opt.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/compress/zstdmt_compress.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/decompress/huf_decompress.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/decompress/zstd_ddict.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/decompress/zstd_decompress.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/decompress/zstd_decompress_block.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/dictBuilder/cover.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/dictBuilder/divsufsort.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/dictBuilder/fastcover.c",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/dictBuilder/zdict.c",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,3 @@
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/lua-populate.dir
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/ZERO_CHECK.dir

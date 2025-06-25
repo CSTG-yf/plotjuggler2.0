@@ -1,0 +1,1 @@
+D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\qwt\src\plotjuggler_qwt_objects.dir\Release\plotjuggler_qwt_objects.lib

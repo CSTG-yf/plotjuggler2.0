@@ -1,0 +1,10 @@
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\SOL2-SUBBUILD\CMAKEFILES\80AB7BC1B52A5942A6798043907BF613\GENERATE.STAMP.RULE
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2/_deps/sol2-subbuild -BD:/gitproject/plotjuggler2/_deps/sol2-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/gitproject/plotjuggler2/_deps/sol2-subbuild/sol2-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

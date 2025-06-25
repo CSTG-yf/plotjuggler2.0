@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/lz4-populate"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/25fa05865c78436521e07b11f6da922f/lz4-populate.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/45426202a209bf33a22ae4695d769fa4/lz4-populate-complete.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-build.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-configure.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-download.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-install.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-patch.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-test.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lz4-subbuild/CMakeFiles/d39348019cd8db7b5903f305a049fdbd/lz4-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lz4-populate"
+		],
+		"name" : "lz4-populate"
+	}
+}

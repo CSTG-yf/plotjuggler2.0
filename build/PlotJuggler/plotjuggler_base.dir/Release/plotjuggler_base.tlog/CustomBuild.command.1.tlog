@@ -1,0 +1,94 @@
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\EA6B27125BC9EDEF2A0D72947BA76572\MOC_DATALOADER_BASE.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\QT\5.15.2\msvc2019_64\bin\moc.exe @D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_base/include/PlotJuggler/moc_dataloader_base.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\EA6B27125BC9EDEF2A0D72947BA76572\MOC_STATEPUBLISHER_BASE.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\QT\5.15.2\msvc2019_64\bin\moc.exe @D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_base/include/PlotJuggler/moc_statepublisher_base.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\EA6B27125BC9EDEF2A0D72947BA76572\MOC_TOOLBOX_BASE.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\QT\5.15.2\msvc2019_64\bin\moc.exe @D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_base/include/PlotJuggler/moc_toolbox_base.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\EA6B27125BC9EDEF2A0D72947BA76572\MOC_DATASTREAMER_BASE.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\QT\5.15.2\msvc2019_64\bin\moc.exe @D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_base/include/PlotJuggler/moc_datastreamer_base.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\EA6B27125BC9EDEF2A0D72947BA76572\MOC_TRANSFORM_FUNCTION.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\QT\5.15.2\msvc2019_64\bin\moc.exe @D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_base/include/PlotJuggler/moc_transform_function.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\EA6B27125BC9EDEF2A0D72947BA76572\MOC_PLOTWIDGET_BASE.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\QT\5.15.2\msvc2019_64\bin\moc.exe @D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_base/include/PlotJuggler/moc_plotwidget_base.cpp_parameters
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\CMAKELISTS.TXT
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

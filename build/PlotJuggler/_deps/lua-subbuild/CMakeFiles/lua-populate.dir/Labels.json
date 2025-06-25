@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/lua-populate"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/c14afad5f5c6fabd71c1b44d26061d67/lua-populate.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/434b18ac7097f6dd8d134f1f13bae9c4/lua-populate-complete.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-build.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-configure.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-download.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-install.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-patch.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-test.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/lua-subbuild/CMakeFiles/cf46e6ed8e26a6e73608a2bb4c04bad5/lua-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lua-populate"
+		],
+		"name" : "lua-populate"
+	}
+}

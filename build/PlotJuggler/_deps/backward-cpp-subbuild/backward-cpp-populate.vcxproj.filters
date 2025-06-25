@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\3f480263fe344421d5f2fb767b516977\backward-cpp-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\b79ce8afcc90078277f76c8b42d2a3d2\backward-cpp-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\09f84792f4dad02b6db092ad83610a39\backward-cpp-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-subbuild\CMakeFiles\backward-cpp-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4727D74B-5FC1-30A3-A538-4E483B3BFB94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -318,38 +318,54 @@ void PlotWidget::onShowPointsTriggered(bool show)
 }
 
 void PlotWidget::onSetXAxisRangeTriggered() {
-    // 创建对话框
+    // Create dialog
     QDialog dialog(this);
     dialog.setWindowTitle("Set X Axis Range");
     
-    // 创建表单布局
+    // Create form layout
     QFormLayout* formLayout = new QFormLayout(&dialog);
     
-    // 创建最小值和最大值输入框
+    // Create min and max input fields
     QLineEdit* minEdit = new QLineEdit(&dialog);
     QLineEdit* maxEdit = new QLineEdit(&dialog);
     
-    // 设置输入验证 - 允许数字、小数点和负号
+    // Set input validation - allow numbers, decimals, negative signs, and datetime formats
     QDoubleValidator* validator = new QDoubleValidator(&dialog);
     validator->setNotation(QDoubleValidator::ScientificNotation);
-    validator->setRange(-1e15, 1e15, 15); // 支持15位数字
+    validator->setRange(-1e15, 1e15, 15); // Support 15 digits
     
     minEdit->setValidator(validator);
     maxEdit->setValidator(validator);
     
-    // 获取当前范围
+    // Get current range
     QwtScaleDiv scaleDiv = qwtPlot()->axisScaleDiv(QwtPlot::xBottom);
     double currentMin = scaleDiv.lowerBound();
     double currentMax = scaleDiv.upperBound();
     
-    minEdit->setText(QString::number(currentMin, 'g', 15));
-    maxEdit->setText(QString::number(currentMax, 'g', 15));
+    // If using datetime scale, convert to readable format
+    if (_use_date_time_scale) {
+        QDateTime minDateTime = QDateTime::fromMSecsSinceEpoch(static_cast<qint64>(currentMin * 1000));
+        QDateTime maxDateTime = QDateTime::fromMSecsSinceEpoch(static_cast<qint64>(currentMax * 1000));
+        
+        minEdit->setText(minDateTime.toString("yyyy-MM-dd HH:mm:ss.zzz"));
+        maxEdit->setText(maxDateTime.toString("yyyy-MM-dd HH:mm:ss.zzz"));
+        
+        // Add format hint label
+        QLabel* formatHint = new QLabel("Accepted formats:\n"
+                                      "1. yyyy-MM-dd HH:mm:ss.zzz\n"
+                                      "2. yyyy/MM/dd HH:mm:ss\n"
+                                      "3. Unix timestamp (seconds)", &dialog);
+        formLayout->addRow("Format Hint:", formatHint);
+    } else {
+        minEdit->setText(QString::number(currentMin, 'g', 15));
+        maxEdit->setText(QString::number(currentMax, 'g', 15));
+    }
     
-    // 添加标签和输入框
+    // Add labels and input fields
     formLayout->addRow("Minimum:", minEdit);
     formLayout->addRow("Maximum:", maxEdit);
     
-    // 创建按钮框
+    // Create button box
     QDialogButtonBox* buttonBox = new QDialogButtonBox(
         QDialogButtonBox::Ok | QDialogButtonBox::Cancel, 
         Qt::Horizontal, 
@@ -358,18 +374,50 @@ void PlotWidget::onSetXAxisRangeTriggered() {
     
     formLayout->addRow(buttonBox);
     
-    // 连接信号
+    // Connect signals
     QObject::connect(buttonBox, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
     QObject::connect(buttonBox, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
     
-    // 设置布局
+    // Set layout
     dialog.setLayout(formLayout);
     
-    // 执行对话框
+    // Execute dialog
     if (dialog.exec() == QDialog::Accepted) {
-        bool okMin, okMax;
-        double minX = minEdit->text().toDouble(&okMin);
-        double maxX = maxEdit->text().toDouble(&okMax);
+        bool okMin = false, okMax = false;
+        double minX = 0, maxX = 0;
+        
+        if (_use_date_time_scale) {
+            // Try to parse as datetime first
+            QDateTime minDt = QDateTime::fromString(minEdit->text(), Qt::ISODate);
+            if (!minDt.isValid()) {
+                minDt = QDateTime::fromString(minEdit->text(), "yyyy/MM/dd HH:mm:ss");
+            }
+            if (minDt.isValid()) {
+                minX = minDt.toMSecsSinceEpoch() / 1000.0;
+                okMin = true;
+            }
+            
+            QDateTime maxDt = QDateTime::fromString(maxEdit->text(), Qt::ISODate);
+            if (!maxDt.isValid()) {
+                maxDt = QDateTime::fromString(maxEdit->text(), "yyyy/MM/dd HH:mm:ss");
+            }
+            if (maxDt.isValid()) {
+                maxX = maxDt.toMSecsSinceEpoch() / 1000.0;
+                okMax = true;
+            }
+            
+            // If datetime parsing failed, try as plain number (timestamp)
+            if (!okMin) {
+                minX = minEdit->text().toDouble(&okMin);
+            }
+            if (!okMax) {
+                maxX = maxEdit->text().toDouble(&okMax);
+            }
+        } else {
+            // Regular numeric input
+            minX = minEdit->text().toDouble(&okMin);
+            maxX = maxEdit->text().toDouble(&okMax);
+        }
         
         if (okMin && okMax) {
             if (minX >= maxX) {
@@ -381,6 +429,9 @@ void PlotWidget::onSetXAxisRangeTriggered() {
             qwtPlot()->setAxisScale(QwtPlot::xBottom, minX, maxX);
             qwtPlot()->replot();
             emit undoableChange();
+        } else {
+            QMessageBox::warning(this, "Invalid Input", 
+                "Please enter valid numbers or datetime strings.");
         }
     }
 }

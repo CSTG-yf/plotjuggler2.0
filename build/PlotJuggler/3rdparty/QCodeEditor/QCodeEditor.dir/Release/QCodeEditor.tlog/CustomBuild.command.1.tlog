@@ -1,0 +1,24 @@
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\F905DB28295A0855F43DAD1ED2226152\QRC_QCODEEDITOR_RESOURCES.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autorcc D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\3RDPARTY\QCODEEDITOR\CMAKELISTS.TXT
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

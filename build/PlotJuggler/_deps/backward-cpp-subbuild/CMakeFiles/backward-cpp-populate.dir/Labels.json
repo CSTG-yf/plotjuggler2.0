@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/backward-cpp-populate"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/09f84792f4dad02b6db092ad83610a39/backward-cpp-populate.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/b79ce8afcc90078277f76c8b42d2a3d2/backward-cpp-populate-complete.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-build.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-configure.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-download.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-install.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-patch.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-test.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/CMakeFiles/3f480263fe344421d5f2fb767b516977/backward-cpp-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"backward-cpp-populate"
+		],
+		"name" : "backward-cpp-populate"
+	}
+}

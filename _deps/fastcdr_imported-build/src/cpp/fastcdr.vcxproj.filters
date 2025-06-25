@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-build\src\cpp\fastcdr_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\Cdr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\CdrSizeCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\FastCdr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\FastBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\exceptions\BadOptionalAccessException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\exceptions\BadParamException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\exceptions\Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\exceptions\LockedExternalAccessException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\exceptions\NotEnoughMemoryException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-build\src\cpp\fastcdr_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-build\src\cpp\fastcdr_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-build\src\cpp\fastcdr_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\Cdr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\CdrEncoding.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\CdrSizeCalculator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\FastBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\FastCdr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\cdr\fixed_size_string.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\config\doxygen_modules.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\detail\container_recursive_inspector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\eProsima_auto_link.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\exceptions\BadOptionalAccessException.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\exceptions\BadParamException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\exceptions\Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\exceptions\LockedExternalAccessException.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\exceptions\NotEnoughMemoryException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\fastcdr_dll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\xcdr\MemberId.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\xcdr\detail\optional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\xcdr\external.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\include\fastcdr\xcdr\optional.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-src\src\cpp\FastCdr.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E96FCF46-E635-35E6-AE77-DDFA1C8A2D3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECDBFE4B-3387-3200-A654-41B8F81B6218}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

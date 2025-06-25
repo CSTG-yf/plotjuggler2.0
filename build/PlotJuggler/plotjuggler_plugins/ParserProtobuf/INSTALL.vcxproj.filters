@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\0094be92b47e9e1fdfabffa5364eb506\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BB8B1DD-CFC8-3F64-80D4-9457D9284C3B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\62c8bf3a312753e4b03525100109b3c4\mcap-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\2b0b2a812de79cd75104222e91e0b601\mcap-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\21a485eaac171f8d2d37422c2c98264c\mcap-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\mcap-subbuild\CMakeFiles\mcap-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4339F5FD-870D-34DE-B3B6-EF64535B87DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

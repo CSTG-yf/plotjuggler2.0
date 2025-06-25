@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\d39348019cd8db7b5903f305a049fdbd\lz4-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\45426202a209bf33a22ae4695d769fa4\lz4-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\25fa05865c78436521e07b11f6da922f\lz4-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\lz4-subbuild\CMakeFiles\lz4-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8226ED6C-6A34-3F02-B5AC-7B799742E967}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

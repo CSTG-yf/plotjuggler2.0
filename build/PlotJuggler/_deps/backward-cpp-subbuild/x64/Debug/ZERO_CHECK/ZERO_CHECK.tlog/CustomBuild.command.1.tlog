@@ -1,0 +1,10 @@
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\_DEPS\BACKWARD-CPP-SUBBUILD\CMAKEFILES\09F84792F4DAD02B6DB092AD83610A39\GENERATE.STAMP.RULE
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild -BD:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/backward-cpp-subbuild/backward-cpp-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

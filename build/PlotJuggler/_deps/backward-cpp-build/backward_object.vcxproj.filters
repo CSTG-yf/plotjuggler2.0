@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-build\backward_object_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-src\backward.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-build\backward_object_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-build\backward_object_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-build\backward_object_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\backward-cpp-src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{977443F0-1625-3849-A805-5638C171EC83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxQuaternion\ToolboxQuaternion_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ToolboxQuaternion\toolbox_quaternion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ToolboxQuaternion\quaternion_to_rpy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxQuaternion\ToolboxQuaternion_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxQuaternion\ToolboxQuaternion_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxQuaternion\ToolboxQuaternion_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxQuaternion\ui_quaternion_to_rpy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ToolboxQuaternion\quaternion_to_rpy.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ToolboxQuaternion\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EA2E0B8F-A2E0-3A15-9FEF-87C721F259B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{977443F0-1625-3849-A805-5638C171EC83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

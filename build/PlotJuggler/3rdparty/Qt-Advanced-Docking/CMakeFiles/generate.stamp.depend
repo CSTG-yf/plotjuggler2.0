@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
+D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/CMakeLists.txt
+D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/src/ads.qrc
+D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/cmake.verify_globs

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\DataLoadCSV.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\DataLoadMCAP.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\DataLoadULog.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\DataStreamSample.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\DataStreamUDP.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\DataStreamWebSocket.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\ParserDataTamer.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\ParserLineInflux.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\ParserROS1.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\ParserROS2.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\PublisherCSV.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\ToolboxFFT.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\ToolboxLuaEditor.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\ToolboxQuaternion.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\bin\Release\plotjuggler.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\gitproject\plotjuggler2\build\PlotJuggler\x64\Release\INSTALL</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

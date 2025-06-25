@@ -1,0 +1,3 @@
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/data_tamer-subbuild/CMakeFiles/data_tamer-populate.dir
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/data_tamer-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/data_tamer-subbuild/CMakeFiles/ZERO_CHECK.dir

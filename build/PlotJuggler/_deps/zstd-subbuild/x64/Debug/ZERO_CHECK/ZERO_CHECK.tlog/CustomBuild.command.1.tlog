@@ -1,0 +1,10 @@
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\_DEPS\ZSTD-SUBBUILD\CMAKEFILES\EFB458CF53C87025A90289A5654052FF\GENERATE.STAMP.RULE
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild -BD:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/zstd-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

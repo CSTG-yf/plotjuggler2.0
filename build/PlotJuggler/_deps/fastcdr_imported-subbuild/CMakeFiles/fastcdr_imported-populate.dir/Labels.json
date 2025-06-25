@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/fastcdr_imported-populate"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/88bc3785aaeef6d733586ea16be1461e/fastcdr_imported-populate.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/74128871c5984b53c630dfa48dc00a84/fastcdr_imported-populate-complete.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-build.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-configure.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-download.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-install.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-patch.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-test.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-subbuild/CMakeFiles/72bda192f72224981e7bbd5b3cd2dbef/fastcdr_imported-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fastcdr_imported-populate"
+		],
+		"name" : "fastcdr_imported-populate"
+	}
+}

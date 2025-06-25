@@ -1,0 +1,10 @@
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\FASTCDR_IMPORTED-SUBBUILD\CMAKEFILES\9F9B2CBE837B6D75C2BDBC8822BDE80A\GENERATE.STAMP.RULE
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2/_deps/fastcdr_imported-subbuild -BD:/gitproject/plotjuggler2/_deps/fastcdr_imported-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/gitproject/plotjuggler2/_deps/fastcdr_imported-subbuild/fastcdr_imported-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

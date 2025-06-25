@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
+D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/CMakeLists.txt
+D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/resources/qcodeeditor_resources.qrc
+D:/gitproject/plotjuggler2/CMakeFiles/cmake.verify_globs

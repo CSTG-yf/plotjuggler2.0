@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QCodeEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLineNumberArea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QCXXHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QCSVHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QSyntaxStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QStyleSyntaxHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QGLSLCompleter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QGLSLHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLanguage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QXMLHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QJSONHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLuaCompleter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLuaHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QPythonCompleter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QPythonHighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QFramedTextAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\3YJK5W5UP7\qrc_qcodeeditor_resources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QHighlightRule.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QHighlightBlockRule.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QCodeEditor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QCXXHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QCSVHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLineNumberArea.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QStyleSyntaxHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QSyntaxStyle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QGLSLCompleter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QGLSLHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLanguage.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QXMLHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QJSONHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLuaCompleter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLuaHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QPythonCompleter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QPythonHighlighter.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QFramedTextAttribute.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\f905db28295a0855f43dad1ed2226152\qrc_qcodeeditor_resources.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QHighlightRule" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QHighlightBlockRule" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QCodeEditor" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QCXXHighlighter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLineNumberArea" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QStyleSyntaxHighlighter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QSyntaxStyle" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QGLSLCompleter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QGLSLHighlighter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLanguage" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QXMLHighlighter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QJSONHighlighter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLuaCompleter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLuaHighlighter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QPythonHighlighter" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QFramedTextAttribute" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BB8B1DD-CFC8-3F64-80D4-9457D9284C3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EA2E0B8F-A2E0-3A15-9FEF-87C721F259B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{977443F0-1625-3849-A805-5638C171EC83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

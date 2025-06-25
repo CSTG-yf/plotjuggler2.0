@@ -1,0 +1,11 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/CMakeFiles/cmake.verify_globs
+D:/gitproject/plotjuggler2/_deps/json-src/CMakeLists.txt
+D:/gitproject/plotjuggler2/_deps/json-src/cmake/config.cmake.in
+D:/gitproject/plotjuggler2/_deps/json-src/cmake/nlohmann_jsonConfigVersion.cmake.in
+D:/gitproject/plotjuggler2/_deps/json-src/cmake/pkg-config.pc.in
+D:/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake
+D:/share/cmake-4.0/Modules/ExternalProject.cmake
+D:/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake
+D:/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+D:/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake

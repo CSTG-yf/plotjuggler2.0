@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\plotdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\datastreamer_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\transform_function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\plotwidget_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\plotzoomer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\plotmagnifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\plotlegend.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\plotpanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\timeseries_qwt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_base\src\reactive_function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler\moc_dataloader_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler\moc_statepublisher_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler\moc_toolbox_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler\moc_datastreamer_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler\moc_transform_function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base\include\PlotJuggler\moc_plotwidget_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\ea6b27125bc9edef2a0d72947ba76572\moc_dataloader_base.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\ea6b27125bc9edef2a0d72947ba76572\moc_statepublisher_base.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\ea6b27125bc9edef2a0d72947ba76572\moc_toolbox_base.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\ea6b27125bc9edef2a0d72947ba76572\moc_datastreamer_base.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\ea6b27125bc9edef2a0d72947ba76572\moc_transform_function.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\ea6b27125bc9edef2a0d72947ba76572\moc_plotwidget_base.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BB8B1DD-CFC8-3F64-80D4-9457D9284C3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{977443F0-1625-3849-A805-5638C171EC83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

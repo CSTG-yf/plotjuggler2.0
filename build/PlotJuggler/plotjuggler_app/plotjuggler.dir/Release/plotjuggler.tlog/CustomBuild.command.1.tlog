@@ -1,0 +1,280 @@
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\RESOURCE.QRC
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\rcc.exe --name resource --output D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/qrc_resource.cpp D:/gitproject/plotjuggler2/plotjuggler_app/resource.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\ABOUTDIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_aboutdialog.h D:/gitproject/plotjuggler2/plotjuggler_app/aboutdialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\MAINWINDOW.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_mainwindow.h D:/gitproject/plotjuggler2/plotjuggler_app/mainwindow.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\SUPPORT_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_support_dialog.h D:/gitproject/plotjuggler2/plotjuggler_app/support_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\CURVELIST_PANEL.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_curvelist_panel.h D:/gitproject/plotjuggler2/plotjuggler_app/curvelist_panel.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\PREFERENCES_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_preferences_dialog.h D:/gitproject/plotjuggler2/plotjuggler_app/preferences_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\SUGGEST_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_suggest_dialog.h D:/gitproject/plotjuggler2/plotjuggler_app/suggest_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\NEW_RELEASE_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_new_release_dialog.h D:/gitproject/plotjuggler2/plotjuggler_app/new_release_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\CHANGELOG_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_changelog_dialog.h D:/gitproject/plotjuggler2/plotjuggler_app/changelog_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\MULTIFILE_PREFIX.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_multifile_prefix.h D:/gitproject/plotjuggler2/plotjuggler_app/multifile_prefix.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\COLORMAP_EDITOR.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_colormap_editor.h D:/gitproject/plotjuggler2/plotjuggler_app/colormap_editor.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\COLORMAP_SELECTOR.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_colormap_selector.h D:/gitproject/plotjuggler2/plotjuggler_app/colormap_selector.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\STATISTICS_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_statistics_dialog.h D:/gitproject/plotjuggler2/plotjuggler_app/statistics_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\PLOT_DOCKER_TOOLBAR.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_plot_docker_toolbar.h D:/gitproject/plotjuggler2/plotjuggler_app/plot_docker_toolbar.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\PLOTWIDGET_EDITOR.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_plotwidget_editor.h D:/gitproject/plotjuggler2/plotjuggler_app/plotwidget_editor.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\FUNCTION_EDITOR.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_function_editor.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/function_editor.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\FUNCTION_EDITOR_HELP.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_function_editor_help.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/function_editor_help.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\TRANSFORM_SELECTOR.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_transform_selector.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/transform_selector.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\FIRST_DERIVATIVE.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_first_derivative.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/first_derivative.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\MOVING_AVERAGE_FILTER.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_moving_average_filter.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/moving_average_filter.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\MOVING_VARIANCE.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_moving_variance.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/moving_variance.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\MOVING_RMS.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_moving_rms.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/moving_rms.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\OUTLIER_REMOVAL.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_outlier_removal.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/outlier_removal.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\INTEGRAL_TRANSFORM.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_integral_transform.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/integral_transform.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\SCALE_TRANSFORM.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_scale_transform.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/scale_transform.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\TRANSFORMS\SAMPLES_COUNT.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_samples_count.h D:/gitproject/plotjuggler2/plotjuggler_app/transforms/samples_count.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\CHEATSHEET\CHEATSHEET_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/ui_cheatsheet_dialog.h D:/gitproject/plotjuggler2/plotjuggler_app/cheatsheet/cheatsheet_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_APP\CMAKELISTS.TXT
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_app/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

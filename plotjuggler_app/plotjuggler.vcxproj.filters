@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotjuggler_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\cheatsheet\cheatsheet_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\customtracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\multifile_prefix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\colormap_editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\colormap_selector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\color_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\curvelist_panel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\curvelist_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\curvetree_view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\dummy_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\messageparser_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\menubar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\new_release_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotwidget_editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotwidget_transforms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plot_docker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plot_docker_toolbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\preferences_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\point_series_xy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plot_background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\statistics_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\suggest_dialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\tabbedplotwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\custom_function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\function_editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\transform_selector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\lua_custom_function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\moving_average_filter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\moving_rms.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\moving_variance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\outlier_removal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\integral_transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\absolute_transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\samples_count.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\first_derivative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\scale_transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\nlohmann_parsers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\qrc_resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotjuggler_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotjuggler_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotjuggler_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\tab_widget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\tree_completer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\realslider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_aboutdialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_support_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_curvelist_panel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_preferences_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_suggest_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_new_release_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_changelog_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_multifile_prefix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_colormap_editor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_colormap_selector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_statistics_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_plot_docker_toolbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_plotwidget_editor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_function_editor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_function_editor_help.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_transform_selector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_first_derivative.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_moving_average_filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_moving_variance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_moving_rms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_outlier_removal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_integral_transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_scale_transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_samples_count.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_app\ui_cheatsheet_dialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\resource.qrc" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\aboutdialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\mainwindow.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\support_dialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\curvelist_panel.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\preferences_dialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\suggest_dialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\new_release_dialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\changelog_dialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\multifile_prefix.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\colormap_editor.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\colormap_selector.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\statistics_dialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\plot_docker_toolbar.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\plotwidget_editor.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\function_editor.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\function_editor_help.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\transform_selector.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\first_derivative.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\moving_average_filter.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\moving_variance.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\moving_rms.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\outlier_removal.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\integral_transform.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\scale_transform.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\transforms\samples_count.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\cheatsheet\cheatsheet_dialog.ui" />
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_app\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="D:\gitproject\plotjuggler2\_deps\json-src\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\gitproject\plotjuggler2\_deps\backward-cpp-build\backward_object.dir\$(Configuration)\mocs_compilation_Debug.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\gitproject\plotjuggler2\_deps\backward-cpp-build\backward_object.dir\$(Configuration)\backward.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\gitproject\plotjuggler2\_deps\backward-cpp-build\backward_object.dir\$(Configuration)\mocs_compilation_Release.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\gitproject\plotjuggler2\_deps\backward-cpp-build\backward_object.dir\$(Configuration)\mocs_compilation_MinSizeRel.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\gitproject\plotjuggler2\_deps\backward-cpp-build\backward_object.dir\$(Configuration)\mocs_compilation_RelWithDebInfo.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{E96FCF46-E635-35E6-AE77-DDFA1C8A2D3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{5CFCCFD5-E574-39AD-BE33-35D958D17535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{ECDBFE4B-3387-3200-A654-41B8F81B6218}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

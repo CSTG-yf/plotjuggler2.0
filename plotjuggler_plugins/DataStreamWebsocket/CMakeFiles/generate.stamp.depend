@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5Config.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5WebSockets/Qt5WebSocketsConfig.cmake
+D:/QT/5.15.2/msvc2019_64/lib/cmake/Qt5WebSockets/Qt5WebSocketsConfigVersion.cmake
+D:/gitproject/plotjuggler2/CMakeFiles/cmake.verify_globs
+D:/gitproject/plotjuggler2/plotjuggler_plugins/DataStreamWebsocket/CMakeLists.txt

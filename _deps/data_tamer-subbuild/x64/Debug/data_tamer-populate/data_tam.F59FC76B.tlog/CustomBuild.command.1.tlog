@@ -1,0 +1,150 @@
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-MKDIR.RULE
+setlocal
+D:\bin\cmake.exe -Dcfgdir=/Debug -P D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/tmp/data_tamer-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\_deps
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/tmp/data_tamer-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-UPDATE.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\_deps\data_tamer-src
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/tmp/data_tamer-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-PATCH.RULE
+setlocal
+D:\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\_deps\data_tamer-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-BUILD.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\_deps\data_tamer-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-INSTALL.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\_deps\data_tamer-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\A9F71BE18459162A6218A2F5CA716696\DATA_TAMER-POPULATE-TEST.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\_deps\data_tamer-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\359A25AC1496F5603F883256A3783B7F\DATA_TAMER-POPULATE-COMPLETE.RULE
+setlocal
+D:\bin\cmake.exe -E make_directory D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/CMakeFiles/Debug/data_tamer-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E touch D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/data_tamer-populate-prefix/src/data_tamer-populate-stamp/Debug/data_tamer-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKEFILES\13B3536103D347F49D820A6CBD7AED56\DATA_TAMER-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\DATA_TAMER-SUBBUILD\CMAKELISTS.TXT
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2/_deps/data_tamer-subbuild -BD:/gitproject/plotjuggler2/_deps/data_tamer-subbuild --check-stamp-file D:/gitproject/plotjuggler2/_deps/data_tamer-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

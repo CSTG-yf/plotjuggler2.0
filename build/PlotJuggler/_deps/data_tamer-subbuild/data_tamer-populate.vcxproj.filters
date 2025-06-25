@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\69a24c6847810b5d3f0f70bb61205f5d\data_tamer-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\3e8aed9619c8bb7423dbd1057cf78b06\data_tamer-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\adb0234c7fecedf62966cc036b411de3\data_tamer-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\data_tamer-subbuild\CMakeFiles\data_tamer-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DA92E579-012C-320B-8254-63F809656CEC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,375 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen",
+	"CMAKE_BINARY_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp",
+	"CMAKE_EXECUTABLE" : "D:/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/CMakeLists.txt",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/config.h.in",
+		"D:/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake",
+		"D:/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/cmake/packaging/Config.cmake.in",
+		"D:/share/cmake-4.0/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/gitproject/plotjuggler2",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/Cdr.h",
+			"MU",
+			"JM27VRVQ5B/moc_Cdr.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/CdrEncoding.hpp",
+			"MU",
+			"JM27VRVQ5B/moc_CdrEncoding.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/CdrSizeCalculator.hpp",
+			"MU",
+			"JM27VRVQ5B/moc_CdrSizeCalculator.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/FastBuffer.h",
+			"MU",
+			"JM27VRVQ5B/moc_FastBuffer.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/FastCdr.h",
+			"MU",
+			"JM27VRVQ5B/moc_FastCdr.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/cdr/fixed_size_string.hpp",
+			"MU",
+			"DPBYIVYPOD/moc_fixed_size_string.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/config/doxygen_modules.h",
+			"MU",
+			"BBKCMPGMKF/moc_doxygen_modules.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/detail/container_recursive_inspector.hpp",
+			"MU",
+			"UI5YRRAT54/moc_container_recursive_inspector.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/eProsima_auto_link.h",
+			"MU",
+			"JM27VRVQ5B/moc_eProsima_auto_link.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/exceptions/BadOptionalAccessException.hpp",
+			"MU",
+			"GYITVJPXAP/moc_BadOptionalAccessException.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/exceptions/BadParamException.h",
+			"MU",
+			"GYITVJPXAP/moc_BadParamException.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/exceptions/Exception.h",
+			"MU",
+			"GYITVJPXAP/moc_Exception.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/exceptions/LockedExternalAccessException.hpp",
+			"MU",
+			"GYITVJPXAP/moc_LockedExternalAccessException.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/exceptions/NotEnoughMemoryException.h",
+			"MU",
+			"GYITVJPXAP/moc_NotEnoughMemoryException.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/fastcdr_dll.h",
+			"MU",
+			"JM27VRVQ5B/moc_fastcdr_dll.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/xcdr/MemberId.hpp",
+			"MU",
+			"ASZ7SCCBMU/moc_MemberId.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/xcdr/detail/optional.hpp",
+			"MU",
+			"MKF3E2T4O7/moc_optional.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/xcdr/external.hpp",
+			"MU",
+			"ASZ7SCCBMU/moc_external.cpp",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include/fastcdr/xcdr/optional.hpp",
+			"MU",
+			"ASZ7SCCBMU/moc_optional.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/include",
+	"INCLUDE_DIR_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/mocs_compilation_MinSizeRel.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/fastcdr_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"FASTCDR_SOURCE",
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"WIN32"
+	],
+	"MOC_DEFINITIONS_MinSizeRel" : 
+	[
+		"FASTCDR_SOURCE",
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"WIN32"
+	],
+	"MOC_DEFINITIONS_RelWithDebInfo" : 
+	[
+		"FASTCDR_SOURCE",
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"WIN32"
+	],
+	"MOC_DEFINITIONS_Release" : 
+	[
+		"FASTCDR_SOURCE",
+		"FMT_HEADER_ONLY",
+		"PJ_MAJOR_VERSION=3",
+		"PJ_MINOR_VERSION=9",
+		"PJ_PATCH_VERSION=3",
+		"WIN32"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/include"
+	],
+	"MOC_INCLUDES_MinSizeRel" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/include"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/include"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/include",
+		"D:/gitproject/plotjuggler2/plotjuggler_base/src",
+		"D:/QT/5.15.2/msvc2019_64/include",
+		"D:/QT/5.15.2/msvc2019_64/include/QtCore",
+		"D:/QT/5.15.2/msvc2019_64/mkspecs/win32-msvc",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWidgets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtGui",
+		"D:/QT/5.15.2/msvc2019_64/include/QtANGLE",
+		"D:/QT/5.15.2/msvc2019_64/include/QtConcurrent",
+		"D:/QT/5.15.2/msvc2019_64/include/QtPrintSupport",
+		"D:/QT/5.15.2/msvc2019_64/include/QtXml",
+		"D:/QT/5.15.2/msvc2019_64/include/QtWebSockets",
+		"D:/QT/5.15.2/msvc2019_64/include/QtNetwork",
+		"D:/QT/5.15.2/msvc2019_64/include/QtSvg",
+		"D:/QT/5.15.2/msvc2019_64/include/QtOpenGL",
+		"D:/gitproject/plotjuggler2/3rdparty/color_widgets/include",
+		"D:/gitproject/plotjuggler2/3rdparty/Qt-Advanced-Docking/include",
+		"D:/gitproject/plotjuggler2/3rdparty/qwt/src",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/include",
+		"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 10,
+	"PARSE_CACHE_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "D:/QT/5.15.2/msvc2019_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "D:/QT/5.15.2/msvc2019_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-build/src/cpp/CMakeFiles/fastcdr_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/Cdr.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/CdrSizeCalculator.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/FastBuffer.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/FastCdr.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/exceptions/BadOptionalAccessException.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/exceptions/BadParamException.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/exceptions/Exception.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/exceptions/LockedExternalAccessException.cpp",
+			"MU",
+			null
+		],
+		[
+			"D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/fastcdr_imported-src/src/cpp/exceptions/NotEnoughMemoryException.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

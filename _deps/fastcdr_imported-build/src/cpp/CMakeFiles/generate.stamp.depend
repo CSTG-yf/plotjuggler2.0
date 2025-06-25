@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/CMakeFiles/cmake.verify_globs
+D:/gitproject/plotjuggler2/_deps/fastcdr_imported-src/cmake/packaging/Config.cmake.in
+D:/gitproject/plotjuggler2/_deps/fastcdr_imported-src/include/fastcdr/config.h.in
+D:/gitproject/plotjuggler2/_deps/fastcdr_imported-src/src/cpp/CMakeLists.txt
+D:/share/cmake-4.0/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+D:/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake
+D:/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake

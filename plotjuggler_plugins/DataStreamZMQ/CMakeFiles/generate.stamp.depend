@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/CMakeFiles/cmake.verify_globs
+D:/gitproject/plotjuggler2/cmake/FindZeroMQ.cmake
+D:/gitproject/plotjuggler2/plotjuggler_plugins/DataStreamZMQ/CMakeLists.txt
+D:/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+D:/share/cmake-4.0/Modules/FindPackageMessage.cmake

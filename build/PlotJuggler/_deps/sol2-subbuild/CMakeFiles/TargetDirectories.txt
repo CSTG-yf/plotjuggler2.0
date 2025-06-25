@@ -1,0 +1,3 @@
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/sol2-subbuild/CMakeFiles/sol2-populate.dir
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/sol2-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/sol2-subbuild/CMakeFiles/ZERO_CHECK.dir

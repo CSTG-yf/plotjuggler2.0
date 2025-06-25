@@ -1,0 +1,24 @@
+^D:\GITPROJECT\PLOTJUGGLER2\BUILD\PLOTJUGGLER\CMAKEFILES\4FCD0CD368FE63753F6202C41D0E6C77\QRC_ADS.CPP.RULE
+setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\Qt-Advanced-Docking
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autorcc D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/Qt-Advanced-Docking/CMakeFiles/qt_advanced_docking_autogen.dir/AutoRcc_ads_UVLADIE3JM_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\3RDPARTY\QT-ADVANCED-DOCKING\CMAKELISTS.TXT
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/Qt-Advanced-Docking/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

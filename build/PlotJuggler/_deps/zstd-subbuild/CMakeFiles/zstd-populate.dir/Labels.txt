@@ -1,0 +1,14 @@
+# Target labels
+ zstd-populate
+# Source files and their labels
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/zstd-populate
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/efb458cf53c87025a90289a5654052ff/zstd-populate.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/c25ee9b0d2f1388f8b26fa0c8cf1c6a8/zstd-populate-complete.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-build.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-configure.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-download.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-install.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-mkdir.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-patch.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-test.rule
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-subbuild/CMakeFiles/a7fa7301d9ab2db13ac7753b2ab901b1/zstd-populate-update.rule

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/zstd-populate"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/5acaaaf2bb8d36e6f6b492eaf55baaac/zstd-populate.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/e65765847d8cd193d50cf5ee43326f00/zstd-populate-complete.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-build.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-configure.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-download.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-install.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-patch.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-test.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/54e54227b854cff963295ccc3998dd4a/zstd-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"zstd-populate"
+		],
+		"name" : "zstd-populate"
+	}
+}

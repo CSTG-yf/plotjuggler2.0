@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{92DB92A3-F05C-3160-BCC1-72AB49B4CEB0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>QCodeEditor</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QCodeEditor.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">QCodeEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QCodeEditor.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">QCodeEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">QCodeEditor.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">QCodeEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">QCodeEditor.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">QCodeEditor</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_Debug;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_Debug;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_Debug;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QCodeEditor</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_Release;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_Release;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_Release;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QCodeEditor</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_MinSizeRel;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_MinSizeRel;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_MinSizeRel;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QCodeEditor</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_RelWithDebInfo;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_RelWithDebInfo;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\include_RelWithDebInfo;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target QCodeEditor</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\f905db28295a0855f43dad1ed2226152\qrc_qcodeeditor_resources.cpp.rule">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Automatic RCC for resources/qcodeeditor_resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autorcc D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\QCodeEditor_autogen.dir\AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\default_style.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\python.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\lua.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\cpp.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\glsl.xml;D:\QT\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\3YJK5W5UP7\qrc_qcodeeditor_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Automatic RCC for resources/qcodeeditor_resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autorcc D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\QCodeEditor_autogen.dir\AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\default_style.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\python.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\lua.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\cpp.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\glsl.xml;D:\QT\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\3YJK5W5UP7\qrc_qcodeeditor_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Automatic RCC for resources/qcodeeditor_resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autorcc D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\QCodeEditor_autogen.dir\AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\default_style.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\python.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\lua.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\cpp.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\glsl.xml;D:\QT\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\3YJK5W5UP7\qrc_qcodeeditor_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Automatic RCC for resources/qcodeeditor_resources.qrc</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autorcc D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\QCodeEditor_autogen.dir\AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Info.json;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\default_style.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\python.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\lua.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\cpp.xml;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\languages\glsl.xml;D:\QT\5.15.2\msvc2019_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\3YJK5W5UP7\qrc_qcodeeditor_resources.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\resources\qcodeeditor_resources.qrc">
+    </None>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QCodeEditor.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLineNumberArea.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QCXXHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QCSVHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QSyntaxStyle.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QStyleSyntaxHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QGLSLCompleter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QGLSLHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLanguage.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QXMLHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QJSONHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLuaCompleter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QLuaHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QPythonCompleter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QPythonHighlighter.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\src\internal\QFramedTextAttribute.cpp" />
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QHighlightRule">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QHighlightBlockRule">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QCodeEditor">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QCXXHighlighter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLineNumberArea">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QStyleSyntaxHighlighter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QSyntaxStyle">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QGLSLCompleter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QGLSLHighlighter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLanguage">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QXMLHighlighter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QJSONHighlighter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLuaCompleter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QLuaHighlighter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QPythonHighlighter">
+    </None>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\QFramedTextAttribute">
+    </None>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QHighlightRule.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QHighlightBlockRule.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QCodeEditor.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QCXXHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QCSVHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLineNumberArea.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QStyleSyntaxHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QSyntaxStyle.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QGLSLCompleter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QGLSLHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLanguage.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QXMLHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QJSONHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLuaCompleter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QLuaHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QPythonCompleter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QPythonHighlighter.hpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\QCodeEditor\include\internal\QFramedTextAttribute.hpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\3YJK5W5UP7\qrc_qcodeeditor_resources.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\ZERO_CHECK.vcxproj">
+      <Project>{2A7661ED-10E2-36F6-9FA8-181C90D5E5F5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

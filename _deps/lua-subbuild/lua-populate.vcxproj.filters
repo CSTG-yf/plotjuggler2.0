@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6ce4a2db1ac0335fa28642bec9148694\lua-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\59a469eedbf3a2c5f03d0cf04c4b3139\lua-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\6774095c3fc23f9884f1685bc5b787ef\lua-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\_deps\lua-subbuild\CMakeFiles\lua-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C6CA1439-A8B7-3CBA-A02D-3904C1DC2502}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

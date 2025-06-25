@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/3rdparty/CMakeLists.txt
+D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/cmake.verify_globs
+D:/share/cmake-4.0/Modules/FetchContent/CMakeLists.cmake.in
+D:/share/cmake-4.0/Modules/FindGit.cmake
+D:/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+D:/share/cmake-4.0/Modules/FindPackageMessage.cmake
+D:/share/cmake-4.0/Modules/Findlua.cmake

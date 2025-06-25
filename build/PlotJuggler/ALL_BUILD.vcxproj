@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6429057D-9235-38BE-B986-84A72EB26D5E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\build\PlotJuggler;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gitproject/plotjuggler2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeSystem.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;D:\gitproject\plotjuggler2\cmake\CPM.cmake;D:\gitproject\plotjuggler2\cmake\Config.cmake.in;D:\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;D:\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\share\cmake-4.0\Modules\FetchContent.cmake;D:\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gitproject/plotjuggler2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeSystem.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;D:\gitproject\plotjuggler2\cmake\CPM.cmake;D:\gitproject\plotjuggler2\cmake\Config.cmake.in;D:\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;D:\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\share\cmake-4.0\Modules\FetchContent.cmake;D:\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gitproject/plotjuggler2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeSystem.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;D:\gitproject\plotjuggler2\cmake\CPM.cmake;D:\gitproject\plotjuggler2\cmake\Config.cmake.in;D:\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;D:\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\share\cmake-4.0\Modules\FetchContent.cmake;D:\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gitproject/plotjuggler2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Concurrent\Qt5ConcurrentConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5NetworkConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Network\Qt5Network_QGenericEnginePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupportConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5PrintSupport\Qt5PrintSupport_QWindowsPrinterSupportPlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5WebSockets\Qt5WebSocketsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\QT\5.15.2\msvc2019_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeCXXCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeRCCompiler.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4.0.1\CMakeSystem.cmake;D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\cmake.verify_globs;D:\gitproject\plotjuggler2\cmake\CPM.cmake;D:\gitproject\plotjuggler2\cmake\Config.cmake.in;D:\share\cmake-4.0\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\share\cmake-4.0\Modules\CMakeCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;D:\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;D:\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;D:\share\cmake-4.0\Modules\CMakePackageConfigHelpers.cmake;D:\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\share\cmake-4.0\Modules\CMakeRCInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Compiler\MSVC.cmake;D:\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\share\cmake-4.0\Modules\FetchContent.cmake;D:\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Linker\MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;D:\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;D:\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\share\cmake-4.0\Modules\WriteBasicConfigVersionFile.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\ZERO_CHECK.vcxproj">
+      <Project>{2A7661ED-10E2-36F6-9FA8-181C90D5E5F5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\DataLoadCSV\DataLoadCSV.vcxproj">
+      <Project>{0D41DA08-D6F2-3243-8EAE-CDC45611887E}</Project>
+      <Name>DataLoadCSV</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\DataLoadMCAP\DataLoadMCAP.vcxproj">
+      <Project>{F2E61CE1-BA58-3D54-9060-D99734407D2F}</Project>
+      <Name>DataLoadMCAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\DataLoadULog\DataLoadULog.vcxproj">
+      <Project>{764392AE-12E6-3675-BADA-FFAA8BF5BC05}</Project>
+      <Name>DataLoadULog</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\DataStreamSample\DataStreamSample.vcxproj">
+      <Project>{B782AFB0-22AA-3526-B847-70023CFB1C84}</Project>
+      <Name>DataStreamSample</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\DataStreamUDP\DataStreamUDP.vcxproj">
+      <Project>{8F5BCBAE-2147-34AF-B3F2-49CB07087362}</Project>
+      <Name>DataStreamUDP</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\DataStreamWebsocket\DataStreamWebSocket.vcxproj">
+      <Project>{2E4B7D1C-5F74-3E4F-9729-2EF9ABFD1F81}</Project>
+      <Name>DataStreamWebSocket</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ParserDataTamer\ParserDataTamer.vcxproj">
+      <Project>{EB1D1296-B23D-36EE-A309-505CEA1278B8}</Project>
+      <Name>ParserDataTamer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ParserLineInflux\ParserLineInflux.vcxproj">
+      <Project>{20FA5756-93F3-3ABC-8C8E-E5E19124DB71}</Project>
+      <Name>ParserLineInflux</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ParserROS\ParserROS1.vcxproj">
+      <Project>{7BAEF262-D362-3361-8BFC-4BA784FF7EBB}</Project>
+      <Name>ParserROS1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ParserROS\ParserROS2.vcxproj">
+      <Project>{7D624DC6-05DC-3BD4-AB1B-F242EAF08F43}</Project>
+      <Name>ParserROS2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\StatePublisherCSV\PublisherCSV.vcxproj">
+      <Project>{DE168AF7-1A57-3258-AB06-83D0CD280130}</Project>
+      <Name>PublisherCSV</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\QCodeEditor\QCodeEditor.vcxproj">
+      <Project>{92DB92A3-F05C-3160-BCC1-72AB49B4CEB0}</Project>
+      <Name>QCodeEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxFFT\ToolboxFFT.vcxproj">
+      <Project>{05B0F904-DA42-33A6-8F4A-DB94DD5CD17D}</Project>
+      <Name>ToolboxFFT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxLuaEditor\ToolboxLuaEditor.vcxproj">
+      <Project>{005D0009-0B17-3F7A-BEE3-C4C56F1B3A63}</Project>
+      <Name>ToolboxLuaEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxQuaternion\ToolboxQuaternion.vcxproj">
+      <Project>{272A014C-E7D6-3B66-9C9C-7B929A627DE9}</Project>
+      <Name>ToolboxQuaternion</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\color_widgets\colorwidgets.vcxproj">
+      <Project>{FB81501A-E525-38F4-8355-0AFAA30AC6DF}</Project>
+      <Name>colorwidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\fastcdr_imported-build\src\cpp\fastcdr.vcxproj">
+      <Project>{353A7BCD-D27F-368D-B612-F879ECD8C8B6}</Project>
+      <Name>fastcdr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ToolboxFFT\3rdparty\KissFFT\kissfft.vcxproj">
+      <Project>{28ED85BB-C41B-3FEC-A6C6-4A1A680F60D9}</Project>
+      <Name>kissfft</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\zstd-build\lib\libzstd_static.vcxproj">
+      <Project>{03263758-5FDC-3F85-A717-3C8A80C3EB6F}</Project>
+      <Name>libzstd_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\lua.vcxproj">
+      <Project>{64B58A65-648B-3452-8BA1-39E5FFE4C460}</Project>
+      <Name>lua</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\DataLoadMCAP\lz4_static.vcxproj">
+      <Project>{0C3CF5C3-9D95-372A-A3E4-24C13C2C2D8A}</Project>
+      <Name>lz4_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_app\plotjuggler.vcxproj">
+      <Project>{3F3984A1-B18D-36F3-9FB0-218AE1984E12}</Project>
+      <Name>plotjuggler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_base.vcxproj">
+      <Project>{1B159BF5-D809-3303-BCA1-FF597A0D19C4}</Project>
+      <Name>plotjuggler_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\qwt\src\plotjuggler_qwt.vcxproj">
+      <Project>{F20CCD80-F064-36A7-8335-B4DF01CF526E}</Project>
+      <Name>plotjuggler_qwt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\qwt\src\plotjuggler_qwt_objects.vcxproj">
+      <Project>{0C60CD0E-8C79-38ED-8488-D5B6737AEBB4}</Project>
+      <Name>plotjuggler_qwt_objects</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\Qt-Advanced-Docking\qt_advanced_docking.vcxproj">
+      <Project>{4C05EB34-29C0-38AF-81A9-60E2C0EF1125}</Project>
+      <Name>qt_advanced_docking</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\build\PlotJuggler\plotjuggler_plugins\ParserROS\rosx_introspection\rosx_introspection.vcxproj">
+      <Project>{F72F21F4-F328-3A17-9CAA-407A69BF570E}</Project>
+      <Name>rosx_introspection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\5ccfcf3ebc04390a0aae0e20c80fc12a\sol2-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\348401d1b20c4063779d90f4f903869c\sol2-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\80ab7bc1b52a5942a6798043907bf613\sol2-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\_deps\sol2-subbuild\CMakeFiles\sol2-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{61A0C9E3-2F2D-33AD-9B64-6A2F72B11297}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

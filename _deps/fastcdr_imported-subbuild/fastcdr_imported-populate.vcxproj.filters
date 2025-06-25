@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\109f5629f135ee368c1095e09fe4231d\fastcdr_imported-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\77a58fdb3842e8b2a7da727f979b6212\fastcdr_imported-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\9f9b2cbe837b6d75c2bdbc8822bde80a\fastcdr_imported-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-subbuild\CMakeFiles\fastcdr_imported-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{66EB4EFE-4937-3724-8279-0BD1D1185C61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

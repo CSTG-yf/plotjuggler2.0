@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\_deps\json-subbuild\CMakeFiles\5c7a2ba43af8baab00c3fe4d5fbac844\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9591DA66-01F1-3007-8A72-BEC4BD93218E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

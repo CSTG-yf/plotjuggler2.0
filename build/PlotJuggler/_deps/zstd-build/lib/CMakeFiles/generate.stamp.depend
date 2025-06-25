@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/cmake.verify_globs
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/CMakeModules/JoinPaths.cmake
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib/CMakeLists.txt
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/build/cmake/lib/cmake_uninstall.cmake.in
+D:/gitproject/plotjuggler2/build/PlotJuggler/_deps/zstd-src/lib/libzstd.pc.in

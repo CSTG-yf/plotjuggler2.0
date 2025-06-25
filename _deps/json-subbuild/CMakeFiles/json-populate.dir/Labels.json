@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/json-populate"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/540113a7cf5f26bb37320a81e15aae01/json-populate.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/aec1e49bb7de2c458ae14151ebcce82d/json-populate-complete.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-build.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-configure.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-download.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-install.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-patch.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-test.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/json-subbuild/CMakeFiles/2afc22177c0b67b2a558d596a576f6b9/json-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"json-populate"
+		],
+		"name" : "json-populate"
+	}
+}

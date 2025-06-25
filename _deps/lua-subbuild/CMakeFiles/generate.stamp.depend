@@ -1,0 +1,20 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/_deps/lua-subbuild/CMakeFiles/4.0.1/CMakeSystem.cmake
+D:/gitproject/plotjuggler2/_deps/lua-subbuild/CMakeLists.txt
+D:/gitproject/plotjuggler2/_deps/lua-subbuild/lua-populate-prefix/tmp/lua-populate-mkdirs.cmake
+D:/share/cmake-4.0/Modules/CMakeGenericSystem.cmake
+D:/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake
+D:/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake
+D:/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake
+D:/share/cmake-4.0/Modules/ExternalProject.cmake
+D:/share/cmake-4.0/Modules/ExternalProject/PatchInfo.txt.in
+D:/share/cmake-4.0/Modules/ExternalProject/RepositoryInfo.txt.in
+D:/share/cmake-4.0/Modules/ExternalProject/UpdateInfo.txt.in
+D:/share/cmake-4.0/Modules/ExternalProject/cfgcmd.txt.in
+D:/share/cmake-4.0/Modules/ExternalProject/gitclone.cmake.in
+D:/share/cmake-4.0/Modules/ExternalProject/gitupdate.cmake.in
+D:/share/cmake-4.0/Modules/ExternalProject/mkdirs.cmake.in
+D:/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake
+D:/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake
+D:/share/cmake-4.0/Modules/Platform/Windows.cmake
+D:/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake

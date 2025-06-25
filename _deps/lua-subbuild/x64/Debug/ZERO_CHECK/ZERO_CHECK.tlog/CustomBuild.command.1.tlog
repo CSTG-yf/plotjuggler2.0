@@ -1,0 +1,10 @@
+^D:\GITPROJECT\PLOTJUGGLER2\_DEPS\LUA-SUBBUILD\CMAKEFILES\6774095C3FC23F9884F1685BC5B787EF\GENERATE.STAMP.RULE
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2/_deps/lua-subbuild -BD:/gitproject/plotjuggler2/_deps/lua-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/gitproject/plotjuggler2/_deps/lua-subbuild/lua-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

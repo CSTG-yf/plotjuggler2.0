@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/backward-cpp-populate"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/31ae09e495de286ddb5a27d1ddbbd3a8/backward-cpp-populate.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/8401949f12f66ea59ef62859bfec914f/backward-cpp-populate-complete.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-build.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-configure.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-download.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-install.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-patch.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-test.rule"
+		},
+		{
+			"file" : "D:/gitproject/plotjuggler2/_deps/backward-cpp-subbuild/CMakeFiles/18ca40429ea9bfc95d6fc7356f31c34d/backward-cpp-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"backward-cpp-populate"
+		],
+		"name" : "backward-cpp-populate"
+	}
+}

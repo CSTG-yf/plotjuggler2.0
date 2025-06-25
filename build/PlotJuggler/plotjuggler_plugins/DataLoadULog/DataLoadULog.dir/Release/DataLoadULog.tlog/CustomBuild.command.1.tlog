@@ -1,0 +1,30 @@
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_PLUGINS\SELECTLISTDIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_plugins/DataLoadULog/ui_selectlistdialog.h D:/gitproject/plotjuggler2/plotjuggler_plugins/selectlistdialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_PLUGINS\DATALOADULOG\ULOG_PARAMETERS_DIALOG.UI
+setlocal
+D:\QT\5.15.2\msvc2019_64\bin\uic.exe -o D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_plugins/DataLoadULog/ui_ulog_parameters_dialog.h D:/gitproject/plotjuggler2/plotjuggler_plugins/DataLoadULog/ulog_parameters_dialog.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\GITPROJECT\PLOTJUGGLER2\PLOTJUGGLER_PLUGINS\DATALOADULOG\CMAKELISTS.TXT
+setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2/build/PlotJuggler --check-stamp-file D:/gitproject/plotjuggler2/build/PlotJuggler/plotjuggler_plugins/DataLoadULog/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

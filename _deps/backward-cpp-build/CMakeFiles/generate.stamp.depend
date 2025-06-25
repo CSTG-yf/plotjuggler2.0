@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/CMakeFiles/cmake.verify_globs
+D:/gitproject/plotjuggler2/_deps/backward-cpp-src/BackwardConfig.cmake
+D:/gitproject/plotjuggler2/_deps/backward-cpp-src/CMakeLists.txt
+D:/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+D:/share/cmake-4.0/Modules/FindPackageMessage.cmake
+D:/share/cmake-4.0/Modules/GNUInstallDirs.cmake

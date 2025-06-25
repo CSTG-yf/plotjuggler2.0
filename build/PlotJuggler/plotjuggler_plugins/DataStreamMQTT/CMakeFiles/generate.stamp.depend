@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+D:/gitproject/plotjuggler2/build/PlotJuggler/CMakeFiles/cmake.verify_globs
+D:/gitproject/plotjuggler2/plotjuggler_plugins/DataStreamMQTT/CMakeLists.txt
+D:/gitproject/plotjuggler2/plotjuggler_plugins/DataStreamMQTT/cmake/FindMosquitto.cmake
+D:/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+D:/share/cmake-4.0/Modules/FindPackageMessage.cmake

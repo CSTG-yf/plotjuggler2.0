@@ -1,0 +1,3 @@
+D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/zstd-populate.dir
+D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/gitproject/plotjuggler2/_deps/zstd-subbuild/CMakeFiles/ZERO_CHECK.dir

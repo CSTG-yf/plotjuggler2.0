@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\Qt-Advanced-Docking\qt_advanced_docking_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\ads_globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockAreaTabBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockAreaTitleBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockAreaWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockContainerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockOverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockSplitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockWidgetTab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockingStateReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockFocusController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\ElidingLabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\FloatingDockContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\FloatingDragPreview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\IconProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\DockComponentsFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\Qt-Advanced-Docking\qt_advanced_docking_autogen\UVLADIE3JM\qrc_ads.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\Qt-Advanced-Docking\qt_advanced_docking_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\Qt-Advanced-Docking\qt_advanced_docking_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\build\PlotJuggler\3rdparty\Qt-Advanced-Docking\qt_advanced_docking_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\ads_globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockAreaTabBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockAreaTitleBar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockAreaTitleBar_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockAreaWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockContainerWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockOverlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockSplitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockWidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockWidgetTab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockingStateReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockFocusController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\ElidingLabel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\FloatingDockContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\FloatingDragPreview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\IconProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\include\Qads\DockComponentsFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\build\PlotJuggler\CMakeFiles\4fcd0cd368fe63753f6202c41d0e6c77\qrc_ads.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\gitproject\plotjuggler2\3rdparty\Qt-Advanced-Docking\src\ads.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3BB8B1DD-CFC8-3F64-80D4-9457D9284C3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EA2E0B8F-A2E0-3A15-9FEF-87C721F259B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{977443F0-1625-3849-A805-5638C171EC83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

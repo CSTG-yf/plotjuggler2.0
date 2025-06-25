@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51FE206E-B492-3A18-8021-0FBCCB83E51B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ParserROS1</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ParserROS1.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ParserROS1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ParserROS1.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ParserROS1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ParserROS1.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ParserROS1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ParserROS1.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ParserROS1</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_Debug;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtSvg" /external:I "D:/gitproject/plotjuggler2/_deps/lua-src" /external:I "D:/gitproject/plotjuggler2/_deps/sol2-src/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR="Debug";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR=\"Debug\";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_Debug;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_Debug;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target ParserROS1</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/ParserROS1_autogen.dir/AutogenInfo.json Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Debug\rosx_introspection.lib;..\..\Debug\plotjuggler_base.lib;..\..\lib\Debug\libfastcdrd-2.2.lib;..\..\lib\Debug\plotjuggler_qwt.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Concurrentd.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Svgd.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Guid.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Cored.lib;..\..\lib\Debug\lua.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/gitproject/plotjuggler2/lib/Debug/ParserROS1.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/gitproject/plotjuggler2/bin/Debug/ParserROS1.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_Release;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtSvg" /external:I "D:/gitproject/plotjuggler2/_deps/lua-src" /external:I "D:/gitproject/plotjuggler2/_deps/sol2-src/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR="Release";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR=\"Release\";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_Release;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_Release;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target ParserROS1</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/ParserROS1_autogen.dir/AutogenInfo.json Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\Release\rosx_introspection.lib;..\..\Release\plotjuggler_base.lib;..\..\lib\Release\libfastcdr-2.2.lib;..\..\lib\Release\plotjuggler_qwt.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Concurrent.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Svg.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Core.lib;..\..\lib\Release\lua.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/gitproject/plotjuggler2/lib/Release/ParserROS1.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/gitproject/plotjuggler2/bin/Release/ParserROS1.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_MinSizeRel;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtSvg" /external:I "D:/gitproject/plotjuggler2/_deps/lua-src" /external:I "D:/gitproject/plotjuggler2/_deps/sol2-src/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR="MinSizeRel";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR=\"MinSizeRel\";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_MinSizeRel;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_MinSizeRel;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target ParserROS1</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/ParserROS1_autogen.dir/AutogenInfo.json MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\MinSizeRel\rosx_introspection.lib;..\..\MinSizeRel\plotjuggler_base.lib;..\..\lib\MinSizeRel\libfastcdr.lib;..\..\lib\MinSizeRel\plotjuggler_qwt.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Concurrent.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Svg.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Core.lib;..\..\lib\MinSizeRel\lua.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/gitproject/plotjuggler2/lib/MinSizeRel/ParserROS1.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/gitproject/plotjuggler2/bin/MinSizeRel/ParserROS1.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_RelWithDebInfo;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/QT/5.15.2/msvc2019_64/include" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtCore" /external:I "D:/QT/5.15.2/msvc2019_64/./mkspecs/win32-msvc" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtWidgets" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtGui" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtANGLE" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtConcurrent" /external:I "D:/QT/5.15.2/msvc2019_64/include/QtSvg" /external:I "D:/gitproject/plotjuggler2/_deps/lua-src" /external:I "D:/gitproject/plotjuggler2/_deps/sol2-src/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR="RelWithDebInfo";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_USE_MATH_DEFINES;NDEBUG;PJ_MAJOR_VERSION=3;PJ_MINOR_VERSION=9;PJ_PATCH_VERSION=3;FMT_HEADER_ONLY;QT_PLUGIN;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QWT_MOC_INCLUDE;QT_CONCURRENT_LIB;QT_SVG_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";ParserROS1_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_RelWithDebInfo;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\include_RelWithDebInfo;D:\gitproject\plotjuggler2\plotjuggler_base\include;D:\gitproject\plotjuggler2\plotjuggler_base\src;D:\QT\5.15.2\msvc2019_64\include\QtPrintSupport;D:\QT\5.15.2\msvc2019_64\include\QtXml;D:\QT\5.15.2\msvc2019_64\include\QtWebSockets;D:\QT\5.15.2\msvc2019_64\include\QtNetwork;D:\QT\5.15.2\msvc2019_64\include\QtOpenGL;D:\gitproject\plotjuggler2\.\3rdparty\color_widgets\include;D:\gitproject\plotjuggler2\.\3rdparty\Qt-Advanced-Docking\include;D:\gitproject\plotjuggler2\.\3rdparty\qwt\src;D:\gitproject\plotjuggler2\.\3rdparty\QCodeEditor\include;D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\include;D:\gitproject\plotjuggler2;D:\gitproject\plotjuggler2\_deps\data_tamer-src\data_tamer_cpp\include;D:\QT\5.15.2\msvc2019_64\include;D:\QT\5.15.2\msvc2019_64\include\QtCore;D:\QT\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;D:\QT\5.15.2\msvc2019_64\include\QtWidgets;D:\QT\5.15.2\msvc2019_64\include\QtGui;D:\QT\5.15.2\msvc2019_64\include\QtANGLE;D:\QT\5.15.2\msvc2019_64\include\QtConcurrent;D:\QT\5.15.2\msvc2019_64\include\QtSvg;D:\gitproject\plotjuggler2\_deps\lua-src;D:\gitproject\plotjuggler2\_deps\sol2-src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target ParserROS1</Message>
+      <Command>setlocal
+cd D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\bin\cmake.exe -E cmake_autogen D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/ParserROS1_autogen.dir/AutogenInfo.json RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\..\lib\RelWithDebInfo\rosx_introspection.lib;..\..\RelWithDebInfo\plotjuggler_base.lib;..\..\lib\RelWithDebInfo\libfastcdr-2.2.lib;..\..\lib\RelWithDebInfo\plotjuggler_qwt.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Concurrent.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Svg.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\QT\5.15.2\msvc2019_64\lib\Qt5Core.lib;..\..\lib\RelWithDebInfo\lua.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/gitproject/plotjuggler2/lib/RelWithDebInfo/ParserROS1.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/gitproject/plotjuggler2/bin/RelWithDebInfo/ParserROS1.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2 --check-stamp-file D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2 --check-stamp-file D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2 --check-stamp-file D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\bin\cmake.exe -SD:/gitproject/plotjuggler2 -BD:/gitproject/plotjuggler2 --check-stamp-file D:/gitproject/plotjuggler2/plotjuggler_plugins/ParserROS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\special_messages.cpp" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ros_parser.cpp" />
+    <ClInclude Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ros1_parser.h" />
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\ParserROS1_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\ZERO_CHECK.vcxproj">
+      <Project>{01005651-5793-3C0D-B055-F2548C66F53D}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\_deps\fastcdr_imported-build\src\cpp\fastcdr.vcxproj">
+      <Project>{CC77E1F4-D9D9-3B9E-8D55-D78235E9D410}</Project>
+      <Name>fastcdr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\3rdparty\lua.vcxproj">
+      <Project>{67B8195D-736B-39FA-8AF4-F0EC88CB0C09}</Project>
+      <Name>lua</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\plotjuggler_base.vcxproj">
+      <Project>{DBB58BBB-7149-30CF-9796-D5790AF26F11}</Project>
+      <Name>plotjuggler_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\3rdparty\qwt\src\plotjuggler_qwt.vcxproj">
+      <Project>{4489CB7B-BFBE-32C0-84BA-1EFECBC3CCDE}</Project>
+      <Name>plotjuggler_qwt</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\gitproject\plotjuggler2\plotjuggler_plugins\ParserROS\rosx_introspection\rosx_introspection.vcxproj">
+      <Project>{3DDC1563-4900-3B5A-9B4C-D00B2A36C624}</Project>
+      <Name>rosx_introspection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

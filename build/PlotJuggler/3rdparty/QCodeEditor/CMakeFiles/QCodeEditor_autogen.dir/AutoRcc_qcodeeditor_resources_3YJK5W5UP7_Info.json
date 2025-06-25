@@ -1,0 +1,37 @@
+{
+	"BUILD_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/QCodeEditor_autogen",
+	"CMAKE_BINARY_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/gitproject/plotjuggler2/3rdparty/QCodeEditor",
+	"CMAKE_SOURCE_DIR" : "D:/gitproject/plotjuggler2",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Visual Studio 16 2019",
+	"INCLUDE_DIR" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/QCodeEditor_autogen/include",
+	"INCLUDE_DIR_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/QCodeEditor_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/QCodeEditor_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/QCodeEditor_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/QCodeEditor_autogen/include_Release",
+	"INPUTS" : 
+	[
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/resources/default_style.xml",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/resources/languages/python.xml",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/resources/languages/lua.xml",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/resources/languages/cpp.xml",
+		"D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/resources/languages/glsl.xml"
+	],
+	"LOCK_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : true,
+	"OPTIONS" : [ "-name", "qcodeeditor_resources" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_qcodeeditor_resources.cpp",
+	"RCC_EXECUTABLE" : "D:/QT/5.15.2/msvc2019_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [],
+	"SETTINGS_FILE" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Used.txt",
+	"SETTINGS_FILE_Debug" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Used_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Used_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Used_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "D:/gitproject/plotjuggler2/build/PlotJuggler/3rdparty/QCodeEditor/CMakeFiles/QCodeEditor_autogen.dir/AutoRcc_qcodeeditor_resources_3YJK5W5UP7_Used_Release.txt",
+	"SOURCE" : "D:/gitproject/plotjuggler2/3rdparty/QCodeEditor/resources/qcodeeditor_resources.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}
