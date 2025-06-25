@@ -318,16 +318,73 @@ void PlotWidget::onShowPointsTriggered(bool show)
 }
 
 void PlotWidget::onSetXAxisRangeTriggered() {
-    bool okMin, okMax;
-    // 修正：补全getDouble参数（父窗口、标题、标签、默认值、最小值、最大值、小数位、确认指针）
-    double minX = QInputDialog::getDouble(this, "Set X Axis Range", "Min:", 0, -1e9, 1e9, 6, &okMin);
-    double maxX = QInputDialog::getDouble(this, "Set X Axis Range", "Max:", 0, -1e9, 1e9, 6, &okMax);
-
-    if (okMin && okMax && minX < maxX) {
-        qwtPlot()->setAxisScale(QwtPlot::xBottom, minX, maxX); // 设置X轴范围
-        qwtPlot()->replot(); // 刷新绘图
+    // 创建对话框
+    QDialog dialog(this);
+    dialog.setWindowTitle("Set X Axis Range");
+    
+    // 创建表单布局
+    QFormLayout* formLayout = new QFormLayout(&dialog);
+    
+    // 创建最小值和最大值输入框
+    QLineEdit* minEdit = new QLineEdit(&dialog);
+    QLineEdit* maxEdit = new QLineEdit(&dialog);
+    
+    // 设置输入验证 - 允许数字、小数点和负号
+    QDoubleValidator* validator = new QDoubleValidator(&dialog);
+    validator->setNotation(QDoubleValidator::ScientificNotation);
+    validator->setRange(-1e15, 1e15, 15); // 支持15位数字
+    
+    minEdit->setValidator(validator);
+    maxEdit->setValidator(validator);
+    
+    // 获取当前范围
+    QwtScaleDiv scaleDiv = qwtPlot()->axisScaleDiv(QwtPlot::xBottom);
+    double currentMin = scaleDiv.lowerBound();
+    double currentMax = scaleDiv.upperBound();
+    
+    minEdit->setText(QString::number(currentMin, 'g', 15));
+    maxEdit->setText(QString::number(currentMax, 'g', 15));
+    
+    // 添加标签和输入框
+    formLayout->addRow("Minimum:", minEdit);
+    formLayout->addRow("Maximum:", maxEdit);
+    
+    // 创建按钮框
+    QDialogButtonBox* buttonBox = new QDialogButtonBox(
+        QDialogButtonBox::Ok | QDialogButtonBox::Cancel, 
+        Qt::Horizontal, 
+        &dialog
+    );
+    
+    formLayout->addRow(buttonBox);
+    
+    // 连接信号
+    QObject::connect(buttonBox, &QDialogButtonBox::accepted, &dialog, &QDialog::accept);
+    QObject::connect(buttonBox, &QDialogButtonBox::rejected, &dialog, &QDialog::reject);
+    
+    // 设置布局
+    dialog.setLayout(formLayout);
+    
+    // 执行对话框
+    if (dialog.exec() == QDialog::Accepted) {
+        bool okMin, okMax;
+        double minX = minEdit->text().toDouble(&okMin);
+        double maxX = maxEdit->text().toDouble(&okMax);
+        
+        if (okMin && okMax) {
+            if (minX >= maxX) {
+                QMessageBox::warning(this, "Invalid Range", 
+                    "Minimum value must be less than maximum value.");
+                return;
+            }
+            
+            qwtPlot()->setAxisScale(QwtPlot::xBottom, minX, maxX);
+            qwtPlot()->replot();
+            emit undoableChange();
+        }
     }
 }
+
 PlotWidget::CurveInfo* PlotWidget::addCurveXY(std::string name_x, std::string name_y,
                                               QString curve_name)
 {
